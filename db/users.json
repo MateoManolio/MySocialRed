@@ -1,0 +1,42 @@
+{
+    "administrators": [{
+        "username":"42944803",
+        "psw": "1234",
+        "name": "Gonza",
+        "surname": "Dico",
+        "study": "Exactas",
+        "profession": "Maestro Mayor de Obras"
+    },
+    {
+        "username":"40668809",
+        "psw": "1234",
+        "name": "Agus",
+        "surname": "Sanchez",
+        "study": "Exactas",
+        "profession": "Maestro Automotor"
+    },
+    {
+        "username": "43725116",
+        "psw": "1234",
+        "name": "Mateo",
+        "surname": "Manolio",
+        "study": "Exactas",
+        "profession": "Analista en Sistemas"
+    }],
+    "users": [{
+        "username":"felipepipe",
+        "psw": "1234",
+        "name": "Felipe",
+        "surname": "Bertoldi",
+        "study": "Exactas",
+        "profession": "Blender man"
+    },
+    {
+        "username":"Trinette",
+        "psw": "1234",
+        "name": "Fernando",
+        "surname": "Cotti",
+        "study": "Exactas",
+        "profession": " Técnico en Computación"
+    }]
+}
