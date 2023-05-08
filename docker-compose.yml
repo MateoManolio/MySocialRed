@@ -2,24 +2,28 @@ version: "3.9"
 services:
   database:
     image: mongo
-    container_name: mean_mongo
+    container_name: mongo
     restart: always
     ports:
       - "27017:27017"
+    # env_file:
+      # - .env
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=password
+      #DB_NAME: $DB_NAME
+      #DB_USER: $DB_USER
+      #DB_PASSWORD: $DB_PASSWORD
+      - ALLOW_EMPTY_PASSWORD=yes
     volumes:
       - mongo-data:/data/db
+      #- ./db/mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh
 
   express:
     build: backend
-    container_name: mean_express   
+    container_name: express   
     restart: always
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=development
       - EXPRESS_SKIP_DB_WAIT=0
       - EXPRESS_SKIP_DB_MIGRATION=0
       - EXPRESS_SKIP_NPM_INSTALL=0
