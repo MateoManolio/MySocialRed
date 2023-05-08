@@ -1,6 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,4 +15,5 @@
     "mongodb": "^5.4.0",
     "mongoose": "^7.1.0"
   }
+  
 }
