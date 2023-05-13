@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  database:
+    image: mongo
+    container_name: mongo
+    # restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - mongo-data:/data/db
+
+  express:
+    build: 
+      context: backend
+      dockerfile: Dockerfile.dev
+    container_name: express   
+    # restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/home/app
+    links:
+      - database 
+
+volumes:
+  mongo-data:

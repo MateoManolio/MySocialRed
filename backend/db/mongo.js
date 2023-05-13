@@ -1,18 +1,79 @@
-import { MongoClient } from "mongodb";
-import data from './news.json' assert {type: 'json'};
+import mongoose from 'mongoose'
 
 const dbName = 'mysocialapp';
-const uri = 'mongodb://admin:password@database:27017/mysocialapp?authSource=admin'
+const url = `mongodb://admin:password@database:27017/${dbName}?authSource=admin`
 
-const client = new MongoClient(uri);
+// create mongoose model and mongoose schema
+// Modularizar
+const models = {
+  'news': ({
+    id: Number,
+    title: String,
+    description: String,
+    date: String,
+    user: String,
+    url: String,
+    urlToImage: String,
+    starts: Number
+  }),
+  'users': ({
+    username: String,
+    psw: String,
+    name: String,
+    surname: String,
+    study: String,
+    profession: String
+  })
+}
 
-let conn;
-try {
-  conn = await client.connect();
-} catch(e) {
-  console.error(e);
-} 
+const connectDB = async () => {
+  mongoose
+  .connect(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log('Connected to the Database.');
+  })
+  .catch(err => console.error(err));
+}
 
-let db = conn.db(dbName)
+export const searchDB = async (model, query = {}) => {
+  // ver manejo de error
+  connectDB();
+  let out = {}
 
-export default db;
+  console.log(model)
+  const schema = mongoose.model(model, new mongoose.Schema(models[model]))
+
+  if (schema) {
+    out = await schema.find(query);
+
+  }
+  // ver manejo de modelos
+  mongoose.connection.close()
+  return out;
+}
+
+export const insertBD = async (model, data = {}) => {
+  connectDB();
+
+  const schema = mongoose.model(model, new mongoose.Schema(models[model]))
+
+  schema
+  .insertMany(data)
+  .then(() => {
+    console.log('Data insertted.');
+  })
+  .catch(err => console.error(err));
+
+  mongoose.connection.close()
+}
+
+export const deleteBD = async (model, query = {}) => {
+  connectDB();
+
+
+
+  mongoose.connection.close()
+}

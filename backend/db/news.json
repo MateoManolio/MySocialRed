@@ -4,6 +4,8 @@
     "description": "El día 18/5 no va a haber clases por un perfeccionamiento docente",
     "date": "5/5/2023:9:39:0:0",
     "user": "Mateo Manolio",
+    "url": "",
+    "urlToImage": "",
     "stars": 0.0
 },
 {
@@ -11,6 +13,8 @@
     "description": "A partir del mes que viene el precio del menú sube a $250",
     "date": "15/5/2023:18:25:0:0",
     "user": "Agus Sanchez",
+    "url": "",
+    "urlToImage": "",
     "stars": 0.0
 },
 {
@@ -18,6 +22,17 @@
     "description": "El día 25/6 no va a haber colectivos circulando en Tandil, así que acurdense que las faltas de hoy no son consideradas",
     "date": "1/6/2023:7:17:0:0",
     "user": "Gonza Dicosimo",
+    "url": "",
+    "urlToImage": "",
+    "stars": 0.0
+},
+{
+    "title": "Paro de colectivos",
+    "description": "El día 25/6 no va a haber colectivos circulando en Tandil, así que acurdense que las faltas de hoy no son consideradas",
+    "date": "1/6/2023:7:17:0:0",
+    "user": "Gonza Dicosimo",
+    "url": "",
+    "urlToImage": "",
     "stars": 0.0
 }],
 "exactas": [{
@@ -25,6 +40,8 @@
     "description": "El 27 y 28 de este mes no habrá clases por semana de finales",
     "date": "1/5/2023:8:54:0:0",
     "user": "Claudia Marineli",
+    "url": "",
+    "urlToImage": "",
     "stars": 0.0
 }],
 "humanas":[{
