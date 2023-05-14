@@ -65,7 +65,7 @@ export const deleteBD = async (model, query = {}) => {
   .then(() => {
     const schema = connectModel(model);
 
-    return schema.find(query)
+    return schema.delete(query)
   })
   .catch((error) => {
     console.error('Error al eliminar en la base de datos:', error.message);
