@@ -9,9 +9,6 @@ services:
     # env_file:
       # - .env
     environment:
-      #DB_NAME: $DB_NAME
-      #DB_USER: $DB_USER
-      #DB_PASSWORD: $DB_PASSWORD
       - ALLOW_EMPTY_PASSWORD=yes
     volumes:
       - mongo-data:/data/db

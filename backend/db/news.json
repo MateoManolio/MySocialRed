@@ -25,8 +25,7 @@
     "url": "",
     "urlToImage": "",
     "stars": 0.0
-},
-{
+},{
     "title": "Paro de colectivos",
     "description": "El día 25/6 no va a haber colectivos circulando en Tandil, así que acurdense que las faltas de hoy no son consideradas",
     "date": "1/6/2023:7:17:0:0",
@@ -36,14 +35,26 @@
     "stars": 0.0
 }],
 "exactas": [{
-    "title": "Semana de finales CON SUSPENSIÖN de clases",
+    "title": "Semana de finales CON SUSPENSION de clases",
     "description": "El 27 y 28 de este mes no habrá clases por semana de finales",
     "date": "1/5/2023:8:54:0:0",
     "user": "Claudia Marineli",
     "url": "",
     "urlToImage": "",
     "stars": 0.0
-}],
+},{
+
+    "title": "Semana de finales CON SUSPENSION de clases",
+    "description": "El 27 y 28 de este mes no habrá clases por semana de finales",
+    "date": "1/5/2023:8:54:0:0",
+    "user": "Claudia Marineli",
+    "url": "",
+    "urlToImage": "",
+    "stars": 0.0
+},
+{}
+
+],
 "humanas":[{
 
 }],

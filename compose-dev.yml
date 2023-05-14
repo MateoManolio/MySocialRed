@@ -12,17 +12,17 @@ services:
       - mongo-data:/data/db
 
   express:
-    build: 
+    build:
       context: backend
       dockerfile: Dockerfile.dev
-    container_name: express   
+    container_name: express
     # restart: always
     ports:
       - "3000:3000"
     volumes:
       - ./backend:/home/app
     links:
-      - database 
+      - database
 
 volumes:
   mongo-data:
