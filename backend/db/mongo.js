@@ -1,5 +1,5 @@
-import mongoose, { connect } from 'mongoose'
-import { models } from './models.js'
+import mongoose from 'mongoose'
+import { schema } from './schema.js'
 
 const dbName = 'mysocialapp';
 const url = `mongodb://admin:password@database:27017/${dbName}?authSource=admin`
@@ -12,40 +12,35 @@ const connectDB = () => {
 };
 
 const connectModel = (model) => {
-  if (mongoose.models[model]) return mongoose.model(model)
+  if (mongoose.schema[model]) return mongoose.model(model)
 
-  return mongoose.model(model, new mongoose.Schema(models[model]));
+  return mongoose.model(model, new mongoose.Schema(schema[model]));
 };
 
-
-export const searchDB = async (model, query = {}) => {
+export const searchDB = async (schema, query = {}) => {
   return connectDB()
   .then(() => {
-    const schema = connectModel(model);
+    const model = connectModel(schema);
 
-    return schema.find(query)
+    return model.find(query)
   })
   .catch((error) => {
     console.error('Error en la búsqueda de la base de datos:', error.message);
 
-    return {}
+    // ver manejo de errores
+    return error
   })
   .finally(() => {
     mongoose.connection.close();
   });
 }
 
-export const insertBD = async (model, data = {}) => {
+export const insertDB = async (model, data = {}) => {
   return connectDB()
     .then(() => {
-      const schema = connectModel(model);
+      const model = connectModel(model);
 
-      // el dato a ingresar debe ser igual que el schema,
-      // habria que iterar por cada uno o ver otra forma
-      // esta no funciona
-      return data.forEach(NodeData => {
-        schema.create(NodeData)
-      })
+      return data.forEach(async (obj) => mod.create(obj));
       
     })
     .catch((error) => {
@@ -60,12 +55,27 @@ export const insertBD = async (model, data = {}) => {
     });
 };
 
-export const deleteBD = async (model, query = {}) => {
+export const updateDB = async (model, filter = {}, update) => {
   return connectDB()
   .then(() => {
-    const schema = connectModel(model);
+    const mod = connectModel(model);
 
-    return schema.delete(query)
+    return mod.findOneAndUpdate(filter, update, { new: true })
+  })
+  .catch((error) => {
+    console.error('Error al actualizar la base de datos: ', error.message);
+  })
+  .finally(() => {
+    mongoose.connection.close();
+  });
+}
+
+export const deleteDB = async (model, query = {}) => {
+  return connectDB()
+  .then(() => {
+    const mod = connectModel(model);
+
+    return mod.delete(query)
   })
   .catch((error) => {
     console.error('Error al eliminar en la base de datos:', error.message);
