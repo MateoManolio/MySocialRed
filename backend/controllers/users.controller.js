@@ -2,20 +2,19 @@ import { searchDB, deleteDB, insertDB } from '../db/mongo.js';
 const MODEL='users'
 
 const getAllUsers = (req, res) => {
-    searchDB(MODEL, {})
+    searchDB(MODEL)
     .then((element) => {
         return res.json(element)
     })
     .catch((error) => {
-        return res.status(400).json({status:"error", error: error});
+        return res.status(500).json({status:"error", error: error});
     })
 };
 
 const createUser = (req, res) => {
-    // curl -X POST -H "Content-Type: application/json" -d '{"nombre": "Ejemplo", "edad": 25}' http://localhost:3000/users
-    // console.log(req.body.nombre)
-    
-    searchDB(MODEL, req.body.firstName )
+    // curl -X POST -H "Content-Type: application/json" -d '{"username": "42944803", "psw": 123, "name":"gonza" , "surname":"dicosimo", "study" : "Ing. de Sistemas", "profession" : "MMO" }' http://localhost:3000/users
+
+    searchDB(MODEL, JSON.parse(req.body) )
     .then((element) => {
         if (element && element.length > 0) {
             res.status(400).send({
@@ -23,7 +22,7 @@ const createUser = (req, res) => {
                 message: req.body.firstName + " is already exist"
             })        
         } else {
-            insertDB(MODEL, req.body.mobile.trim())
+            insertDB(MODEL, req.body)
             .then( (element) => {
                 res.status(201).json({ message: "New contact created!", data: element})
             })

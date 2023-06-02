@@ -4,7 +4,7 @@ import { schema } from './schema.js'
 const dbName = 'mysocialapp';
 const url = `mongodb://admin:password@database:27017/${dbName}?authSource=admin`
 
-const connectDB = () => {
+const connectDB = () => { 
   return mongoose.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -12,8 +12,8 @@ const connectDB = () => {
 };
 
 const connectModel = (model) => {
-  if (mongoose.schema[model]) return mongoose.model(model)
-
+  if ( mongoose.modelNames().includes(model)) return mongoose.model(model)
+ 
   return mongoose.model(model, new mongoose.Schema(schema[model]));
 };
 
@@ -21,7 +21,6 @@ export const searchDB = async (schema, query = {}) => {
   return connectDB()
   .then(() => {
     const model = connectModel(schema);
-
     return model.find(query)
   })
   .catch((error) => {
@@ -38,9 +37,10 @@ export const searchDB = async (schema, query = {}) => {
 export const insertDB = async (model, data = {}) => {
   return connectDB()
     .then(() => {
-      const model = connectModel(model);
+      const schema = connectModel(model);
 
-      return data.forEach(async (obj) => mod.create(obj));
+      return schema.create(data)
+      // return data.forEach(async (obj) => model.create(obj));
       
     })
     .catch((error) => {
@@ -56,11 +56,11 @@ export const insertDB = async (model, data = {}) => {
 };
 
 export const updateDB = async (model, filter = {}, update) => {
-  return connectDB()
+  return connectDB()  
   .then(() => {
-    const mod = connectModel(model);
+    const schema = connectModel(model);
 
-    return mod.findOneAndUpdate(filter, update, { new: true })
+    return schema.findOneAndUpdate(filter, update, { new: true })
   })
   .catch((error) => {
     console.error('Error al actualizar la base de datos: ', error.message);

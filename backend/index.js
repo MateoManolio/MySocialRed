@@ -10,7 +10,7 @@ app.use('/users', usersRouter);
 app.use('/news', newsRouter);
 
 app.get('/', (req, res) => {
-  res.status(400).send('Hello World')
+  res.status(400).send('Hello world')
 })
 
 app.listen(3000, () => {
