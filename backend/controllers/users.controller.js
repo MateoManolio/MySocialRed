@@ -1,7 +1,9 @@
 import { searchDB, deleteDB, insertDB } from '../db/mongo.js';
+
+// Constants
 const MODEL='users'
 
-const getAllUsers = (req, res) => {
+export const getAllUsers = (req, res) => {
     searchDB(MODEL)
     .then((element) => {
         return res.json(element)
@@ -11,7 +13,7 @@ const getAllUsers = (req, res) => {
     })
 };
 
-const createUser = (req, res) => {
+export const createUser = (req, res) => {
     // curl -X POST -H "Content-Type: application/json" -d '{"username": "42944803", "psw": 123, "name":"gonza" , "surname":"dicosimo", "study" : "Ing. de Sistemas", "profession" : "MMO" }' http://localhost:3000/users
 
     searchDB(MODEL, {"username":req.body.username})
@@ -36,7 +38,7 @@ const createUser = (req, res) => {
     })
 };
 
-const getUserById = (req, res) => {
+export const getUserById = (req, res) => {
         console.log(req.body.id)
         searchDB(MODEL, { _id: req.params.id })
         .then( (element) => {
@@ -48,18 +50,21 @@ const getUserById = (req, res) => {
         })
 };
 
-const updateUser = (req, res) => {
+export const updateUser = (req, res) => {
 
 };
 
-const deleteUser = (req, res) => {
+export const deleteUser = (req, res) => {
+    // curl -X DELETE http://localhost:3000/users/i42944803 -H "Accept: application/json"
+
+
     // Tengo en cuenta que el username es el id
-    searchDB(MODEL, {"username":req.body.username})
+    searchDB(MODEL, {"username": req.params.id})
     .then((element) => {
         if (element && element.length > 0) {
-            insertDB(MODEL, req.body)
+            deleteDB(MODEL, {"username": req.params.id})
             .then((element) => {
-                res.status(201).json({ message: "New user created!", data: element})
+                res.status(201).json({ message: "has been successfully deleted!", data: element})
             })
             .catch ((error) => {
                 return res.status(400).json({status:"error", error: error});
@@ -75,5 +80,3 @@ const deleteUser = (req, res) => {
         return res.status(400).json({status:"error", error: error});
     })
 };
-
-export { getAllUsers, createUser, getUserById, updateUser, deleteUser };

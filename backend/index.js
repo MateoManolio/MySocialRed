@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
   res.status(400).send('Hello world')
 })
 
+
 app.listen(3000, () => {
   console.log('Servidor escuchando en el puerto 3000');
 });

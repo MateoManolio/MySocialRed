@@ -18,12 +18,11 @@ const connectModel = (model) => {
   return mongoose.model(model, new mongoose.Schema(schema[model]));
 };
 
-export const searchDB = async (schema, query = {}) => {
-  console.log(query)
+export const searchDB = async (model, query = {}) => {
   return connectDB()
   .then(() => {
-    const model = connectModel(schema);
-    return model.find(query)
+    const schema = connectModel(model);
+    return schema.find(query)
   })
   .catch((error) => {
     console.error('Error en la búsqueda de la base de datos:', error.message);
@@ -77,7 +76,7 @@ export const deleteDB = async (model, query = {}) => {
   .then(() => {
     const schema = connectModel(model);
 
-    return schema.delete(query)
+    return schema.deleteOne(query)
   })
   .catch((error) => {
     console.error('Error al eliminar en la base de datos:', error.message);
