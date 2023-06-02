@@ -1,4 +1,4 @@
-export const models = {
+export const schema = {
     'news': ({
       id: Number,
       title: String,
