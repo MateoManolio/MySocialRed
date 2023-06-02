@@ -4,6 +4,7 @@ import { schema } from './schema.js'
 const dbName = 'mysocialapp';
 const url = `mongodb://admin:password@database:27017/${dbName}?authSource=admin`
 
+// Alejandro dijo de unir todo lo de schemas y conexiones
 const connectDB = () => { 
   return mongoose.connect(url, {
     useNewUrlParser: true,
@@ -18,6 +19,7 @@ const connectModel = (model) => {
 };
 
 export const searchDB = async (schema, query = {}) => {
+  console.log(query)
   return connectDB()
   .then(() => {
     const model = connectModel(schema);
@@ -73,9 +75,9 @@ export const updateDB = async (model, filter = {}, update) => {
 export const deleteDB = async (model, query = {}) => {
   return connectDB()
   .then(() => {
-    const mod = connectModel(model);
+    const schema = connectModel(model);
 
-    return mod.delete(query)
+    return schema.delete(query)
   })
   .catch((error) => {
     console.error('Error al eliminar en la base de datos:', error.message);
