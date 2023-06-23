@@ -60,11 +60,11 @@ export const updateDB = async (model, filter = {}, update) => {
   return connectDB()  
   .then(() => {
     const schema = connectModel(model);
-
     return schema.findOneAndUpdate(filter, update, { new: true })
   })
   .catch((error) => {
     console.error('Error al actualizar la base de datos: ', error.message);
+
   })
   .finally(() => {
     mongoose.connection.close();
