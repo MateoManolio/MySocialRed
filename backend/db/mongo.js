@@ -4,6 +4,7 @@ import { schema } from './schema.js'
 const dbName = 'mysocialapp';
 const url = `mongodb://admin:password@database:27017/${dbName}?authSource=admin`
 
+
 // Alejandro dijo de unir todo lo de schemas y conexiones
 const connectDB = async () => { 
   return mongoose.connect(url, {
@@ -21,7 +22,7 @@ const connectDB = async () => {
 const connectModel = (model) => {
   if ( mongoose.modelNames().includes(model)) return mongoose.model(model)
  
-  return mongoose.model(model, new mongoose.Schema(schema[model]));
+  return mongoose.model(model, schema[model]);
 };
 
 export const searchDB = async (model, query = {}) => {

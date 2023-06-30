@@ -59,7 +59,6 @@ export const updateUser = (req, res) => {
     })
 };
 
-
 export const deleteUser = (req, res) => {
     // curl -X DELETE http://localhost:3000/users/42944803 -H "Accept: application/json"
 

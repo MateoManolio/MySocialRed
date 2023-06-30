@@ -1,5 +1,6 @@
-{
-"general": [{
+{ 
+"type" : "general",
+"news": [{
     "title": "Suspensión de clases",
     "description": "El día 18/5 no va a haber clases por un perfeccionamiento docente",
     "date": "5/5/2023:9:39:0:0",
@@ -34,7 +35,8 @@
     "urlToImage": "",
     "stars": 0.0
 }],
-"exactas": [{
+"type" : "exactas",
+"news": [{
     "title": "Semana de finales CON SUSPENSION de clases",
     "description": "El 27 y 28 de este mes no habrá clases por semana de finales",
     "date": "1/5/2023:8:54:0:0",
@@ -43,7 +45,6 @@
     "urlToImage": "",
     "stars": 0.0
 },{
-
     "title": "Semana de finales CON SUSPENSION de clases",
     "description": "El 27 y 28 de este mes no habrá clases por semana de finales",
     "date": "1/5/2023:8:54:0:0",
@@ -51,10 +52,7 @@
     "url": "",
     "urlToImage": "",
     "stars": 0.0
-},
-{}
-
-],
+}],
 "humanas":[{
 
 }],
