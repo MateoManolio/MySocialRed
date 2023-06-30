@@ -6,10 +6,10 @@ const MODEL='users'
 export const getAllUsers = (req, res) => {
     searchDB(MODEL)
     .then((element) => {
-        return res.json(element)
+        res.json(element)
     })
     .catch((error) => {
-        return res.status(500).json({status:"error", error: error});
+        res.status(500).json({status:"error", error: error});
     })
 };
 
@@ -26,22 +26,23 @@ export const createUser = (req, res) => {
                 res.status(201).json({ message: "New user created!", data: element})
             })
             .catch ( (error) => {
-                return res.status(400).json({status:"error", error: error});
+                res.status(400).json({status:"error", error: error});
             })
         }
     })
     .catch((error) => {
-        return res.status(400).json({status:"error", error: error});
+        res.status(400).json({status:"error", error: error});
     })
 };
 
 export const getUserById = (req, res) => {
+    // curl -X GET http://localhost:3000/users/42944803 -H "Accept: application/json"
     searchDB(MODEL, { username: req.params.id })
     .then((element) => {
         res.json(element)
     })
     .catch((error) => {
-        return res.status(500).json({status:"error", error: error});
+        res.status(500).json({status:"error", error: error});
     })
 };
 
@@ -54,13 +55,13 @@ export const updateUser = (req, res) => {
         res.status(201).json({ message: "has been successfully update!", data: element})
     })
     .catch((error) => {
-        return res.status(400).json({status:"error", message: req.params.id + " does not exist"});
+        res.status(400).json({status:"error", message: req.params.id + " does not exist"});
     })
 };
 
 
 export const deleteUser = (req, res) => {
-    // curl -X DELETE http://localhost:3000/users/i42944803 -H "Accept: application/json"
+    // curl -X DELETE http://localhost:3000/users/42944803 -H "Accept: application/json"
 
     // Tengo en cuenta que el username es el id
     searchDB(MODEL, { username: req.params.id})
@@ -71,7 +72,7 @@ export const deleteUser = (req, res) => {
                 res.status(201).json({ message: "has been successfully deleted!", data: element})
             })
             .catch ((error) => {
-                return res.status(400).json({status:"error", error: error});
+                res.status(400).json({status:"error", error: error});
             })
         } else {
             res.status(400).send({
@@ -79,9 +80,8 @@ export const deleteUser = (req, res) => {
                 message: req.body.username + " does not exist"
             })    
         }
-            
     })
     .catch((error) => {
-        return res.status(500).json({status:"error", error: error});
+        res.status(500).json({status:"error", error: error});
     })
 };
