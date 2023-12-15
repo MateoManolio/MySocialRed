@@ -15,6 +15,10 @@ export const schema = {
       name: String,
       surname: String,
       study: String,
-      profession: String
+      profession: String,
+      role: {
+          type: String,
+          default: 'regular'
+      }
     })
   }

@@ -1,32 +1,51 @@
 version: "3.9"
+
 services:
   database:
-    image: mongo
+    image: mongo:latest
     container_name: mongo
     restart: always
-    ports:
-      - "27017:27017"
-    # env_file:
-      # - .env
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     volumes:
       - mongo-data:/data/db
-      #- ./db/mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh
+    networks:
+      - my_network
 
-  express:
-    build: backend
-    container_name: express   
+  backend:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    container_name: express
     restart: always
-    ports:
-      - "3000:3000"
+    networks:
+      - my_network
+
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    container_name: angular
+    restart: always
+    networks:
+      - my_network
+
+  proxy:
+    image: nginx:alpine
+    container_name: proxy
+    restart: always
     environment:
-      - EXPRESS_SKIP_DB_WAIT=0
-      - EXPRESS_SKIP_DB_MIGRATION=0
-      - EXPRESS_SKIP_NPM_INSTALL=0
-      - EXPRESS_SKIP_BOWER_INSTALL=0
-    links:
-      - database 
+      - NGINX_ENVSUBST_TEMPLATE_SUFFIX=.conf
+      - NGINX_ENVSUBST_OUTPUT_DIR=/etc/nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/templates/nginx.conf.conf
+    networks:
+      - my_network
+
+networks:
+  my_network:
 
 volumes:
   mongo-data:

@@ -1,9 +1,22 @@
-FROM node:18
+# Dockerfile for Node.js/Express.js backend (production)
 
-RUN mkdir -p /home/app
+# Use an official Node.js runtime as a parent image
+FROM node:lts-alpine
 
-COPY . /home/app
+# Set the working directory in the container
+WORKDIR /usr/src/app
 
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
+
+# Install only production dependencies
+RUN npm install --production
+
+# Copy the application files to the working directory
+COPY . .
+
+# Expose the port on which the app runs
 EXPOSE 3000
 
-CMD ["node", "/home/app/index.js"]
+# Command to run the application in production mode
+CMD ["npm", "start"]

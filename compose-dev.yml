@@ -1,28 +1,45 @@
 version: "3.9"
+
 services:
   database:
     image: mongo
     container_name: mongo
-    # restart: always
-    ports:
-      - "27017:27017"
+    restart: always
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - "27017:27017"
     volumes:
       - mongo-data:/data/db
 
-  express:
+  backend:
     build:
       context: backend
       dockerfile: Dockerfile.dev
     container_name: express
-    # restart: always
+    restart: always
+    environment:
+      - EXPRESS_SKIP_DB_WAIT=0
+      - EXPRESS_SKIP_DB_MIGRATION=0
+      - EXPRESS_SKIP_NPM_INSTALL=0
+      - EXPRESS_SKIP_BOWER_INSTALL=0
     ports:
       - "3000:3000"
     volumes:
-      - ./backend:/home/app
+      - ./backend:/usr/src/app
     links:
       - database
+
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile.dev
+    container_name: angular
+    restart: always
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./frontend:/usr/src/app
 
 volumes:
   mongo-data:
