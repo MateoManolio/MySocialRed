@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.back-to-home {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  color: #3498db;
+  font-size: 18px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 80vh;
+  background-color: #f4f4f4;
+  }
+
+.form-container {
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.login-form {
+  background-color: #001321;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  transition: transform 0.3s; /* Agregar una transición de 0.3 segundos al formulario */
+  box-shadow: 0px 5px 15px -2.5px #000000cc;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(240, 236, 236);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgb(240, 236, 236);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  background-color: rgb(240, 236, 236);
+  border: 1px solid rgb(240, 236, 236);
+  border-radius: 6px;
+  transition: background-color 0.3s; /* Agregar una transición de 0.3 segundos al color de fondo de los inputs */
+}
+
+.login-form input:hover,
+.login-form input:focus {
+  background-color: linear-gradient(to bottom, #3498db, #2980b9); /* Cambiar el color de fondo al pasar el mouse o tener el foco */
+  border-color: #3498db; /* Cambiar el color del borde al pasar el mouse o tener el foco */
+  outline: none; /* Eliminar el contorno predeterminado en el foco */
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s; /* Agregar transiciones */
+}
+
+button:hover {
+  background-color: #217dbb;
+}
+
+button:active {
+  transform: scale(0.95); /* Escala el botón cuando está activo (pulsado) */
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  color: #808080; 
+  cursor: not-allowed;
+  transform: none;
+}
+
+button:focus {
+  outline: none;
+  border: 2px solid #217dbb;
+  box-shadow: 0 0 5px #217dbb;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid rgb(240, 236, 236);
+  border-radius: 6px;
+  background-color: rgb(240, 236, 236);;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+
+select:hover, input:hover,
+select:focus, input:focus {
+  border-color: #3498db;
+  background-color: #fff;
+}
+
+.block {
+  padding: 0px;
+  margin : 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  }
+  
+
+.signup-link {
+  margin-top: 12px;
+  text-align: center;
+  color: #7c7979;
+  margin-bottom: 20px;
+}
+
+.signup-link a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Al acercarte, agranda el formulario */
+.form-container:hover,
+.form-container:focus-within {
+  transform: scale(1.02);
+}
+
+  .gg-home {
+    background:
+    linear-gradient(to left,
+    currentColor 5px,transparent 0)
+    no-repeat 0 bottom/4px 2px,
+    linear-gradient(to left,
+    currentColor 5px,transparent 0)
+    no-repeat right bottom/4px 2px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 18px;
+    height: 14px;
+    border: 2px solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: -2px
+    }
+  
+  .gg-home::after,
+  .gg-home::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute
+  }
+ 
+  .gg-home::before {
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-top-left-radius: 4px;
+  transform: rotate(45deg);
+  top: -5px;
+  border-radius: 3px;
+  width: 14px;
+  height: 14px;
+  left: 0
+  }
+ 
+  .gg-home::after {
+  width: 8px;
+  height: 10px;
+  border: 2px solid;
+  border-radius: 100px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+  left: 3px;
+  bottom: 0
+  } 

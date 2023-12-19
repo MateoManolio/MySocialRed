@@ -64,12 +64,14 @@ export const deleteUser = (req, res) => {
     // curl -X DELETE http://localhost:3000/users/42944803 -H "Accept: application/json"
 
     // Tengo en cuenta que el username es el id
-    searchDB(MODEL, { username: req.params.id})
+    const username = req.params.id || '';
+
+    searchDB(MODEL, { username: username})
     .then((element) => {
         if (Object.keys(element).length > 0) {
-            deleteDB(MODEL, {username: req.params.id})
+            deleteDB(MODEL, {username: username})
             .then((element) => {
-                res.status(201).json({ message: "has been successfully deleted!", data: element})
+                res.status(201).json({ message: `${username} has been successfully deleted!`, data: element})
             })
             .catch ((error) => {
                 res.status(400).json({status:"error", error: error});
@@ -77,7 +79,7 @@ export const deleteUser = (req, res) => {
         } else {
             res.status(400).send({
                 status: "error",
-                message: req.body.username + " does not exist"
+                message: username + " does not exist"
             })    
         }
     })

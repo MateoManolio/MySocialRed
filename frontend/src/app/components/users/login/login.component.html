@@ -1,0 +1,23 @@
+<a href="/home" class="back-to-home"><i class="gg-home"></i></a>
+  
+<div class="form-container">
+    <form [formGroup]="loginForm" class="login-form" (ngSubmit)="loginUser()">
+        <h2>Login</h2>
+        <div class="field">
+            <label for="username">Usuario</label>
+            <input type="text" pInputText formControlName="username" class="w-full" name="username" placeholder="Escribe tu dni..."/>
+            @if (username.invalid && (username.dirty || username.touched)) {
+                @if (username.errors?.['required']) {<div class="block p-error">El usuario es requerido.</div>}
+            }
+        </div>
+        <div class="field">
+            <label for="psw">Contraseña</label>
+            <input type="password" pInputText formControlName="psw" class="w-full" name="psw" placeholder="Escribe tu contraseña..."/>
+            @if (psw.invalid && (psw.dirty || psw.touched)) {
+                @if (psw.errors?.['required']) {<div class="block p-error">La contraseña es requerida.</div>}
+            }
+        </div>
+        <button type="submit" [disabled]="loginForm.invalid">Sign in</button>
+        <div class="signup-link">No estas registrado? <a href="/register">Registrarse</a></div>
+    </form>
+</div>

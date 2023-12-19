@@ -1,70 +1,295 @@
 {
-"general": [{
-    "title": "Suspensión de clases",
-    "description": "El día 18/5 no va a haber clases por un perfeccionamiento docente",
-    "date": "5/5/2023:9:39:0:0",
-    "user": "Mateo Manolio",
-    "url": "",
-    "urlToImage": "",
-    "stars": 0.0
-},
-{
-    "title": "El comedior Subirá de precio",
-    "description": "A partir del mes que viene el precio del menú sube a $250",
-    "date": "15/5/2023:18:25:0:0",
-    "user": "Agus Sanchez",
-    "url": "",
-    "urlToImage": "",
-    "stars": 0.0
-},
-{
-    "title": "Paro de colectivos",
-    "description": "El día 25/6 no va a haber colectivos circulando en Tandil, así que acurdense que las faltas de hoy no son consideradas",
-    "date": "1/6/2023:7:17:0:0",
-    "user": "Gonza Dicosimo",
-    "url": "",
-    "urlToImage": "",
-    "stars": 0.0
-},{
-    "title": "Paro de colectivos",
-    "description": "El día 25/6 no va a haber colectivos circulando en Tandil, así que acurdense que las faltas de hoy no son consideradas",
-    "date": "1/6/2023:7:17:0:0",
-    "user": "Gonza Dicosimo",
-    "url": "",
-    "urlToImage": "",
-    "stars": 0.0
-}],
-"exactas": [{
-    "title": "Semana de finales CON SUSPENSION de clases",
-    "description": "El 27 y 28 de este mes no habrá clases por semana de finales",
-    "date": "1/5/2023:8:54:0:0",
-    "user": "Claudia Marineli",
-    "url": "",
-    "urlToImage": "",
-    "stars": 0.0
-},{
-
-    "title": "Semana de finales CON SUSPENSION de clases",
-    "description": "El 27 y 28 de este mes no habrá clases por semana de finales",
-    "date": "1/5/2023:8:54:0:0",
-    "user": "Claudia Marineli",
-    "url": "",
-    "urlToImage": "",
-    "stars": 0.0
-},
-{}
-
-],
-"humanas":[{
-
-}],
-"veterinaria": [{
-
-}],
-"economicas": [{
-
-}],
-"arte": [{
-
-}]
-}
+    "general": [{
+        "title": "Suspensión de clases",
+        "description": "El día 18/5 no va a haber clases por un perfeccionamiento docente",
+        "date": "5/5/2023:9:39:0:0",
+        "user": "Mateo Manolio",
+        "url": "",
+        "urlToImage": "",
+        "stars": 0.0
+    },
+    {
+        "title": "Reprogramación de reconocimiento a trabajadores universitarios",
+        "description": "Estimada comunidad universitaria queremos comunicarles que la entrega de medallas a docentes y nodocentes, que cumplen 25 años de trabajo en la UNICEN prevista para el próximo viernes 15 en el Aula Magna ha sido reprogramada para los primeros meses del próximo año.\n\nEl cambio de fecha (que será oportunamente informada) se definió ante las consecuencias originadas por el temporal en Olavarría que ocasionó graves daños en dicha ciudad y, afectó a la población en la que viven nuestras compañeras y compañeros universitarios.",
+        "date": "13/12/2023:00:00:0:0",
+        "user": "",
+        "url": "https://www.unicen.edu.ar/content/reprogramaci%C3%B3n-de-reconocimiento-trabajadores-universitarios-0",
+        "urlToImage": "https://www.unicen.edu.ar/sites/default/files/imagecache/imagen-teaser/imagenes/actualidad/2011-01/411122714_670633131913088_3922393065420343609_n.jpg",
+        "stars": 0.0
+    },
+    {
+        "title": "Joven historiador desnuda trama que rodeo la masacre de Tandil",
+        "description": "El enviado de Tata Dios\nGuido Rapallini desnuda una trama de la historia tandilense con su trabajo de tesis “El ocaso de la frontera y la familia Gómez (Tandil, 1860-1874)”, (dirección de Melina Yangilevich y codirección de Lucas Matías Bilbao), lo que sirvió para releer la historia oficial y el mito construido en torno al curandero Gerónimo Solané, una de las víctimas de la masacre ocurrida el primero de enero 1872 con la matanza de 37 inmigrantes. En paralelo el profesor que este 12 de diciembre se transformó en licenciado de historia de la Universidad Nacional del Centro gracias a la defensa de su material realizó una campaña cultural para concientizar sobre el maltrato que recibió el hombre que ejercía la medicina de manera alternativa en la aldea de entonces.\n\nEste es un fragmento de la investigación que por su originalidad y excelente prosa debería transformarse en un libro al alcance de todos.\n\nDice el autor:\n\nEn este trabajo daremos cuenta de parte del proceso de cambio social y político de la segunda mitad del siglo XIX en el sur de la provincia de Buenos Aires. Para ello, nos centraremos en la historia de una familia de propietarios rurales residente en Tandil: los Gómez. Procuraremos aportar al conocimiento sobre la historia de la frontera bonaerense a partir de la trayectoria de una familia de notables locales en un contexto de profundas transformaciones sociales.\n\nEn el marco de despliegue del Estado y su inserción en el mercado mundial, este grupo familiar fue perdiendo el status adquirido construido durante parte del siglo XVIII y el XIX. A medida que dicha sociedad de frontera se fue reconfigurando, esta familia fue quedando afuera de los nuevos circuitos y estructuras de poder generados en esa transición histórica. El recorte espacial y temporal escogido se centra en el actual partido de Tandil, entre 1860 y 1890 y responde a estos procesos generales.\n\nEl espacio de la campaña de Buenos Aires durante el periodo considerado fue escenario de múltiples transformaciones sociales, políticas y económicas. Estos cambios que trastocaron los modos de vida de buena parte de los habitantes de la campaña, generaron rechazos y conflictos que eclosionaron en la conocida matanza de extranjeros del 1° de enero de 1872. Las versiones oficiales atribuyeron la masacre a un conocido curandero de la zona, Gerónimo G. de Solané (a) Tata Dios, quien atendía diariamente a decenas de personas enfermas en un rancho dentro de una de las estancias de la familia Gómez.\n\nEstos sucesos son claves porque ponen de manifiesto las tensiones sociales de aquellos años. La trama relacional que desplegó la familia Gómez y su articulación con las redes de poder local, fue lo que le permitió conservar un lugar privilegiado en el plano político y económico, mientras la sociedad de la campaña logró mantener cierta cohesión social.\n\nCuando la frontera se fue diluyendo a partir de la segunda mitad del siglo XIX, esa articulación que le daba notabilidad a este grupo de estancieros se fue disgregando también.",
+        "date": "13/12/2023:00:00:0:0",
+        "user": "",
+        "url": "https://www.unicen.edu.ar/content/joven-historiador-desnuda-trama-que-rodeo-la-masacre-de-tandil",
+        "urlToImage": "https://www.unicen.edu.ar/sites/default/files/imagecache/imagen-teaser/imagenes/actualidad/2011-01/NJ6ZE2AGCFCK5NMB6ZCWHRV5CY.jpg",
+        "stars": 0.0
+    },
+    {
+        "title": "Unidades CONICET y los 40 años ininterrumpidos de Democracia",
+        "description": "Días atrás se llevó a cabo la Jornada por los 40 años de democracia argentina.\n\nDe la jornada, en la que disertaron investigadores de CONICET con radicación y desarrollo en los campus y complejos universitarios de la Universidad, participaron el Rector Marcelo Aba y la vicerrectora Alicia Spinello, el secretario de Ciencia, Arte y Tecnología, Pablo Lotito, autoridades e integrantes de las Unidades Ejecutoras del CONICET Tandil, miembros de la comunidad científica con lugar de trabajo diferentes unidades académicas, e integrantes de la Mesa Intersectorial Tandil por Memoria, Verdad y Justicia.",
+        "date": "12/12/2023:00:00:0:0",
+        "user": "",
+        "url": "https://www.unicen.edu.ar/content/unidades-conicet-y-los-40-a%C3%B1os-ininterrumpidos-de-democracia",
+        "urlToImage": "https://www.unicen.edu.ar/sites/default/files/imagecache/imagen-teaser/imagenes/actualidad/2011-01/406860416_18137976142310207_1430193516902064191_n.jpg",
+        "stars": 0.0
+    }
+    ],
+    "exactas": [{
+        "title": "Semana de finales CON SUSPENSION de clases",
+        "description": "Francia, como actor principal en la lucha contra el cambio climático y garante del espíritu del Acuerdo de París lanza un nuevo programa MOPGA de becas de investigación para jóvenes investigadores con el fin de trabajar en el refuerzo de las contribuciones científicas a las cuestiones de cambio climático planteadas por las COP. Esta séptima convocatoria de proyectos del programa (MOPGA), financiado por el Ministerio de Europa y Asuntos Exteriores (MEAE), en colaboración con el Ministerio de Enseñanza Superior e Investigación (MESR) y ejecutado por Campus France, acogerá a 40 jóvenes investigadores internacionales que deseen realizar trabajos de investigación en laboratorios y centros de investigación franceses. Los investigadores extranjeros con un título de doctorado de menos de 5 años pueden responder a esta convocatoria. Los solicitantes de todas las nacionalidades pueden postularse, excepto los nacionales franceses. Se otorgarán 40 becas por un período de 12 meses a partir de septiembre de 2024. Esta beca incluye los siguientes beneficios: Subsidio mensual de 2.500 euros, 500 euros de indemnización por instalación, Plan de seguro de salud (responsabilidad civil y asistencia a la repatriación incl.) hasta la inscripción en el Régimen de Seguridad Social francés, Seguro Complementario de Salud (responsabilidad civil y asistencia a la repatriación, incl.), después de la inscripción en el Régimen de Seguridad Social francés. Temas de investigación: El programa de becas para jóvenes investigadores MOPGA 2024 financiará a los investigadores que trabajen en los siguientes temas de investigación: Ciencias del sistema terrestre, Ciencias del cambio climático y la sostenibilidad, Transición energética, Desafíos sociales de los problemas ambientales, La salud humana, animal y de los ecosistemas como parte de un enfoque de “Una sola salud”. Cierre de candidaturas: 9 de enero del 2024.",
+        "date": "12/12/2023:8:54:0:0",
+        "user": "Claudia Marineli",
+        "url": "https://exa.unicen.edu.ar/programa-de-becas-make-our-planet-great-again-mopga-2024/",
+        "urlToImage": "",
+        "stars": 0.0
+    },{
+    
+        "title": "Programa de Becas “Make our Planet Great Again (MOPGA) 2024”",
+        "description": "El 27 y 28 de este mes no habrá clases por semana de finales",
+        "date": "1/5/2023:8:54:0:0",
+        "user": "Claudia Marineli",
+        "url": "",
+        "urlToImage": "",
+        "stars": 0.0
+    },
+    {
+        "title": "Próxima defensa de tesis doctoral – Doctorado en Ciencias Aplicadas mención Ambiente y Salud",
+        "description": "Informamos que el viernes 15 de diciembre de 2023, a las 10 hs. en el Aula I del Pabellón de nuestra Facultad,  se llevará a cabo con modalidad híbrida, la defensa de la Tesis del Doctorado en Ciencias Aplicadas mención Ambiente y Salud titulada: “Estudios de las Variaciones Paleoambientales y Paleomagnéticas en el Holoceno Tardío en la Región Pampeana Argentina”, realizada por  la Lic. Romina Achaga, bajo la dirección de la Dra. Claudia Gogorza y el Dr. Avtandil Gogichaishvili. Serán juradxs la Dra. María Paula Iglesia Llano (Instituto de Geociencias Básicas, Aplicadas y Ambientales de Buenos Aires-IGEBA), la Dra. Milagrosa Aldana (Departamento de Ciencias de la Tierra – Universidad Simón Bolívar – Caracas –Venezuela) y el Dr. Gabriel Vázquez Castro (Instituto de Geofísica, Universidad Nacional Autónoma de México). La Defensa se podrá seguir en vivo a través del canal de youtube de nuestra Facultad. ¡Éxitos Romina en esta recta final!",
+        "date": "13/12/2023:18:25:0:0",
+        "user": "Agus Sanchez",
+        "url": "https://exa.unicen.edu.ar/proxima-defensa-de-tesis-doctoral-doctorado-en-ciencias-aplicadas-mencion-ambiente-y-salud/",
+        "urlToImage": "https://exa.unicen.edu.ar/wp-content/uploads/2023/12/DEF-CAFF-6-1024x1024.png",
+        "stars": 0.0
+    },
+    {
+        "title": "EN LOS MEDIOS",
+        "description": "Les compartimos la nota “La Universidad sacó la ciencia a la calle con la EXATEC”, publicada el 11 de diciembre de 2023 en “El Eco de Tandil”.",
+        "date": "11/12/2023:7:17:0:0",
+        "user": "Gonza Dicosimo",
+        "url": "https://exa.unicen.edu.ar/7991-2/",
+        "urlToImage": "https://exa.unicen.edu.ar/wp-content/uploads/2023/12/3-1024x1024.jpg",
+        "stars": 0.0
+    },{
+        "title": "Paro de colectivos",
+        "description": "El día 25/6 no va a haber colectivos circulando en Tandil, así que acurdense que las faltas de hoy no son consideradas",
+        "date": "1/6/2023:7:17:0:0",
+        "user": "Gonza Dicosimo",
+        "url": "",
+        "urlToImage": "",
+        "stars": 0.0
+    },
+    {
+        "title": "Becas posdoctorales en todas las disciplinas en Europa",
+        "description": "La segunda convocatoria de Yufe4Postdocs ofrece veintidós plazas cofinanciado por el Programa Marie Sklodowska-Curie de Horizonte Europa. Forma parte de la Alianza Jóvenes Universidades (YUFE) para el Futuro de Europa, que reúne a nueve instituciones de nivel superior con actividad de investigación. Esta convocatoria, que acepta candidatos/as de todas las carreras y de todas las nacionalidades, tiene como objetivo formar investigadores preparados para el futuro, construyendo puentes entre el mundo académico y la sociedad. Presenta un procedimiento de evaluación novedoso basado principalmente en juicios cualitativos. Los proyectos de investigación deben enfocarse en el bienestar de los/las ciudadanos/as o en la identidad europea. Se seleccionarán cuatro becarios/as para la Universidad de Maastricht (Países Bajos); tres para las universidades de Amberes (Bélgica), del Este de Finlandia, de Bremen (Alemania), de Chipre, de Rijeka (Croacia) y Carlos III de Madrid (España); y dos para la Nicolás Copérnico de Torun (Polonia) y la de Essex (Reino Unido). Los postulantes deberán haber obtenido su doctorado como máximo seis años antes de la fecha límite de la convocatoria y no deben haber residido ni realizado su actividad principal (trabajo o estudio) en el país de la futura universidad de destino durante más de 12 meses en los 36 meses inmediatamente anteriores a la convocatoria. Se ofrece manutención por un período de 36 meses y un programa de capacitación basado en la participación comunitaria, la interacción de partes interesadas, y la ciencia y la innovación abierta al que contribuyen seis organizaciones empresariales y diez consejos municipales y regionales.",
+        "date": "12/12/2023:7:17:0:0",
+        "user": "Gonza Dicosimo",
+        "url": "https://exa.unicen.edu.ar/becas-posdoctorales-en-todas-las-disciplinas-en-europa/",
+        "urlToImage": "",
+        "stars": 0.0
+    },
+    {}
+    ],
+    "humanas":[
+        {
+            "title": "400 estudiantes iniciaron curso de ingreso en Facultad de Ciencias Humanas",
+            "description": "Con una inscripción de 400 estudiantes a las carreras de grado presenciales de la Facultad de Ciencias Humanas, esta semana se dio inicio al Curso de Ingreso que se desarrollará hasta mediados del mes de marzo.",
+            "date": "17/12/2023:00:00:0:0",
+            "user": "",
+            "url": "https://www.unicen.edu.ar/content/400-estudiantes-iniciaron-curso-de-ingreso-en-facultad-de-ciencias-humanas",
+            "urlToImage": "https://www.unicen.edu.ar/sites/default/files/imagecache/imagen-teaser/imagenes/actualidad/2011-01/fch%20ingreso%20decana_0.jpg",
+            "stars": 0.0
+        },
+        {
+            "title": "Facultad de Ciencias Humanas participa en el fallecimiento",
+            "description": "Nodocentes, equipo de gestión y la comunidad de la Facultad de Ciencias Humanas participan con hondo pesar del fallecimiento de la Sra. Elena Pena de Ferreyra, ocurrido el 03 de noviembre en la ciudad de Tandil, madre de Claudia Ferreyra, nodocente y Directora de la Dirección de Alumnos de la facultad.",
+            "date": "05/12/2023:00:00:0:0",
+            "user": "",
+            "url": "https://www.unicen.edu.ar/content/facultad-de-ciencias-humanas-participa-fallecimiento-4",
+            "urlToImage": "https://www.unicen.edu.ar/sites/default/files/imagecache/banner-encabezado-seccion/imagenes/seccion/actualidad.jpg",
+            "stars": 0.0
+        },
+        {
+            "title": "Aprobación de Trabajos Finales Integradores",
+            "description": "El pasado 31 de Marzo, en el marco de la primera cohorte de la Diplomatura Universitaria en Política y Gestión de la Cooperación Internacional Universitaria, se aprobaron los trabajos finales integradores de las tres primeras graduadas.",
+            "date": "29/04/2022:00:00:0:0",
+            "user": "",
+            "url": "http://news.fch.unicen.edu.ar/?cat=1",
+            "urlToImage": "http://news.fch.unicen.edu.ar/wp-content/uploads/2015/07/cropped-P1010515.jpg",
+            "stars": 0.0
+        },
+        {
+            "title": "Jornadas de Investigación en Ciencias Humanas: Avances y Desafíos",
+            "description": "La Facultad de Ciencias Humanas organiza las Jornadas de Investigación, donde se presentarán los avances y desafíos en diversas áreas de estudio. El evento se llevará a cabo los días 20 y 21 de octubre de 2022 en Tandil, Buenos Aires.",
+            "date": "20/10/2022:00:00:0:0",
+            "user": "",
+            "url": "http://news.fch.unicen.edu.ar/?cat=1",
+            "urlToImage": "http://news.fch.unicen.edu.ar/wp-content/uploads/2022/04/273681411_153070073760420_1094847675495502369_n-768x644-150x150.jpg",
+            "stars": 0.0
+        },
+        {
+            "title": "Charla abierta: \"Hacia una Educación Inclusiva\"",
+            "description": "La Facultad de Ciencias Humanas invita a la comunidad a participar en una charla sobre educación inclusiva. Se abordarán estrategias y desafíos para promover la igualdad de oportunidades en el ámbito educativo.",
+            "date": "15/11/2023:00:00:0:0",
+            "user": "",
+            "url": "https://www.unicen.edu.ar/content/charla-abierta-hacia-una-educacion-inclusiva",
+            "urlToImage": "",
+            "stars": 0.0
+        },
+        {
+            "title": "\"Reflexiones sobre Identidad y Cultura\"",
+            "description": "La Facultad de Ciencias Humanas celebra la presentación del libro \"Reflexiones sobre Identidad y Cultura\", escrito por la docente Dra. María García. El evento se llevará a cabo el 10 de enero de 2024 en el auditorio de la facultad.",
+            "date": "10/01/2024:00:00:0:0",
+            "user": "",
+            "url": "https://www.unicen.edu.ar/content/presentacion-de-libro-reflexiones-sobre-identidad-y-cultura",
+            "urlToImage": "",
+            "stars": 0.0
+        }
+    ],
+    "veterinaria": [
+        {
+            "title": "II Simposio Argentino sobre Escherichia coli productor de toxina Shiga (STEC/VTEC) responsable del Síndrome Urémico Hemolítico (SUH) ",
+            "description": "16 y 17 de Mayo, 2024 La Facultad de Ciencias Veterinarias de la Universidad Nacional del Centro de la Provincia de Buenos Aires, tiene el honor de organizar el II Simposio Nacional sobre Escherichia coli productor de toxina Shiga (STEC/VTEC) responsable del Síndrome Urémico Hemolítico (SUH). Este evento científico de gran relevancia que se llevará a cabo en los días 16 y 17 de Mayo del 2024 en la ciudad de Tandil en el Centro Cultural Universitario (Yrigoyen 662) Buenos Aires, Argentina. La iniciativa de llevar a cabo este evento surge de la necesidad de promover un encuentro multidisciplinario, propiciando el intercambio de conocimientos en investigación científica básica y aplicada. Este simposio busca construir un espacio de colaboración que contribuya a abordar un problema global con epicentro en nuestro país: el Síndrome Urémico Hemolítico (SUH). Se trabajará sobre cuatro ejes temáticos: Detección y caracterización de STEC Epidemiología y genómica de STEC Prevención, control y tratamiento de STEC en reservorios y humanos Patogenia y respuesta del hospedador En cada eje participarán invitados destacados reconocidos por su trayectoria e investigadores jóvenes y profesionales de la salud de diversas disciplinas. La reunión contará con la participación especial de LuSUH (Lucha contra el Síndrome Urémico Hemolítico) formada por madres y padres afectados por SUH, quienes aportarán experiencias comunitarias sobre la enfermedad y contribuirán a su difusión al ámbito social.",
+            "date": "6/12/2023:00:00:0:0",
+            "user": "",
+            "url": "http://www.vet.unicen.edu.ar/index.php/es/component/content/article/ii-simposio-argentino-sobre-escherichia-coli-productor-de-toxina-shiga-stec-vtec-responsable-del-sindrome-uremico-hemolitico-suh?catid=29&Itemid=101",
+            "urlToImage": "http://www.vet.unicen.edu.ar/images/2023/LOGO.jpg",
+            "stars": 0.0
+        },
+        {
+            "title": "Se confirmaron casos positivos de encefalomielitis equina en las provincias de Santa Fe y Corrientes",
+            "description": "El 25 de noviembre del corriente año, el Servicio Nacional de Sanidad y Calidad Agroalimentaria (SENASA) informó que se obtuvieron resultados positivos a alphavirus (encefalomielitis equina) en muestras de equinos con signología nerviosa y posterior muerte, ubicados en los Departamentos de Lavalle, Corrientes y San Cristóbal, Santa Fe. Las muestras fueron procesadas por el Instituto Nacional de Tecnología Agropecuaria (INTA) Castelar y el Instituto de Virología José María Vanella de la Universidad Nacional de Córdoba. Las muestras positivas provenientes de Santa Fe fueron tipificadas por el Instituto de Virología José María Vanella quien, el 27 de noviembre, confirmó la presencia de encefalomielitis equina de tipo Oeste. A partir de esto, todos los establecimientos que notificaron casos de equinos con signos nerviosos y/o muerte, se encuentran sometidos a interdicción oficial con restricción absoluta de movimientos. Asimismo, el SENASA dio intervención al Ministerio de Salud de la Nación y a las autoridades locales con los que se trabaja en forma articulada.",
+            "date": "29/11/2023:00:00:0:0",
+            "user": "Vet. Juliana Cantón",
+            "url": "http://www.vet.unicen.edu.ar/index.php/es/component/content/article/se-confirmaron-casos-positivos-de-encefalomielitis-equina-en-las-provincias-de-santa-fe-y-corrientes?catid=25&Itemid=101",
+            "urlToImage": "http://www.vet.unicen.edu.ar/images/2023/11/29/zocas-e-hijos-013.jpg",
+            "stars": 0.0
+        },
+        {
+            "title": "Día del/la NoDocente universitario",
+            "description": "¡Feliz día a las nodocentes y los nodocentes de la FCV! 🎉 En el Día del nodocente, queremos expresar nuestro afectuoso saludo a todos quienes, con su dedicación y compromiso, contribuyen diariamente a las tareas administrativas, técnicas y de mantenimiento en la Facultad de Cs. Veterinarias. Su esfuerzo sostiene el funcionamiento de nuestra institución y promueve el acceso a una educación pública, gratuita, inclusiva y de calidad. ¡#somosfcv 🎉 #somosunicen!",
+            "date": "26/11/2023:00:00:0:0",
+            "user": "",
+            "url": "http://www.vet.unicen.edu.ar/index.php/es/component/content/article/dia-del-la-nodocente-universitario?catid=24&Itemid=101",
+            "urlToImage": "http://www.vet.unicen.edu.ar/images/2023/11/26/dia-no-docente.png",
+            "stars": 0.0
+        },
+        {
+            "title": "4tas Jornadas de Prácticas Hospitalarias Extramuros (PHE) y la 2° Jornada de Cierre de Prácticas Tutoradas Iniciales III (PracTIs III) y Prácticas Hospitalarias I (PH I)",
+            "description": "El 22 de Noviembre de 2023, en nuestra Facultad, se realizaron las 4tas Jornadas de Prácticas Hospitalarias Extramuros (PHE) y la 2° Jornada de Cierre de Prácticas Tutoradas Iniciales III (PracTIs III) y Prácticas Hospitalarias I (PH I). Estas actividades se enmarcan en los trayectos formativos de Profesionalidad Médica y de Prácticas Socioeducativas, que tienen como finalidad otorgar una formación integral de los y las futuras profesionales. El evento fue organizado por docentes de los cursos del Trayecto Formativo Prácticas Hospitalarias, Enfermedades Infecciosas y Sociología y Extensión Rural, con el objetivo de generar un espacio de intercambio y aprendizaje que moviliza lo trabajado en el año poniendo a cada estudiante como protagonista. Participaron 103 estudiantes de 3er año por PracTIs III y 40 estudiantes de 5to año por PHE/PHIII, con diversos formatos de intervención. Desde PHE, se presentaron los casos clínicos que fueron atendidos en territorio (Protectora de Animales Tandil) y de manera secundaria en el Hospital Escuela de la UNCPBA, en formato póster con exposición oral, mientras que desde PracTIs y PHI se presentaron propuestas de intervención en la comunidad creadas a partir de las visitas a Bromatología de Tandil y al Hospital Escuela de la Facultad, en formato de presentación oral y stand. Las presentaciones de los grupos de estudiantes resultaron de gran creatividad y compromiso, superando ampliamente las expectativas del equipo docente. Agradecemos a Vetanco @vetnacoargentina, König @koniglab y el Caldén por ser sponsors del evento, a las gestiones de la Facultad @fcv_unicen por hacer posible el evento, a los tutores y tutoras de PracTIs III y PHE/PHI, y especialmente a los y las estudiantes por el compromiso con la iniciativa. ¡¡Esperamos año a año seguir realizando con el mismo entusiasmo!!",
+            "date": "22/11/2023:00:00:0:0",
+            "user": "",
+            "url": "http://www.vet.unicen.edu.ar/index.php/es/component/content/article/4tas-jornadas-de-practicas-hospitalarias-extramuros-phe-y-la-2-jornada-de-cierre-de-practicas-tutoradas-iniciales-iii-practis-iii-y-practicas-hospitalarias-i-ph-i?catid=8&Itemid=101",
+            "urlToImage": "http://www.vet.unicen.edu.ar/images/2023/12/15/foto-1.jpg",
+            "stars": 0.0
+        },
+        {
+            "title": "Inaguración del Banco de Germoplasma Nativo Del Centro de la Provincia de Buenos Aires",
+            "description": "El día Lunes 13/11 se inauguró el Banco de Germoplasma Nativo del Centro de la Provincia de Buenos Aires, perteneciente a la Facultad de Ciencias Veterinarias de la UNICEN y anclado en el Programa de Conservación Comunitaria del Territorio. El objetivo de estos primeros cuatro bancos es construir colecciones de germoplasma nativo con fines de restauración ecológica y conservación de la biodiversidad local y regional en la provincia de Buenos Aires, actuando como plataforma para albergar las diferentes líneas de trabajo que involucren germoplasma nativo, fomentando el intercambio profesional, interdisciplinario, interinstitucional y comunitario. En una región tan modificada como la pampa argentina, resulta clave no solo proteger sino también conocer mejor, utilizar y revalorizar nuestro germoplasma nativo, Veterinarias, haciéndose eco de tendencias nacionales e internacionales, apunta a seguir aprendiendo y enseñando sobre nuevas formas de ganadería sostenible de base pastoril, revalorizando las especies forrajeras y contribuyendo a la construcción de socioecosistemas biodiversos y resilientes, donde los hábitats nativos estén integrados en las matrices productivas y urbanas. ¡Felicitaciones a la MV Andrea Caselli, Mg. Clara Milano y al Equipo de Custodios del Territorio por este GRAN LOGRO!",
+            "date": "15/11/2023:00:00:0:0",
+            "user": "",
+            "url": "http://www.vet.unicen.edu.ar/index.php/es/component/content/article/inaguracion-del-banco-de-germoplasma-nativo-del-centro-de-la-provincia-de-buenos-aires?catid=8&Itemid=101",
+            "urlToImage": "http://www.vet.unicen.edu.ar/images/2023/11/15/4.jpg",
+            "stars": 0.0
+        }
+    ],
+    "economicas": [{
+        "title": "USO DE LA INTELIGENCIA ARTIFICIAL GENERATIVA EN LA ENSEÑANZA DE CONTABILIDAD: EXPERIENCIAS DOCENTES EN CURSOS UNIVERSITARIOS",
+        "description": "INTELIGENCIA ARTIFICIAL GENERATIVA EN LA ENSEÑANZA DE CONTABILIDAD: EXPERIENCIAS DOCENTES EN CURSOS UNIVERSITARIOS. En diálogo con Enfoque de Negocios, Ribas compartió el surgimiento de la temática desarrollada y el abordaje que realizó junto a su colega Marcos Provasi. “Este año empezamos a trabajar en un nuevo proyecto de investigación que busca caracterizar la profesión del contador público en el marco del nuevo contexto impuesto por la transformación digital en Argentina y describir, en consecuencia, las competencias requeridas en la etapa inicial de desarrollo profesional. Esto nos acercó a estudiar diferentes tecnologías y herramientas como la inteligencia artificial (IA) y a experimentar con su aplicación, en este caso en nuestro rol docente, y de allí surgió la idea del trabajo”. Y comentó que la generalización de la difusión y uso de herramientas de Inteligencia Artificial (IA) en especial la generativa (como ChatGPT, Bing, Bard) llegando al público en general en el último año, los motivó a estudiar estas herramientas, desde el punto de vista de los procesos formativos de contadores en Argentina. “Más concretamente, buscamos describir el uso actual y su posible aplicación en la carrera de Contador Público a partir de diferentes experiencias docentes en una universidad pública de la provincia de Buenos Aires” explicó. Al profundizar la idea central que ambos profesionales desarrollan en su investigación, Ribas hizo hincapié en el método de aplicación de la IA en la educación. Y añadió que, “si bien se han empezado a percibir sus efectos probablemente en los últimos 10 años, desde el inicio del presente siglo hemos sido testigos de fuertes cambios en las sociedades producto de la digitalización con impactos y reestructuraciones, aunque en forma dispar, en lo económico, político, social y educativo”. “En particular, para la educación, estudios previos han identificado que la IA permite la personalización del aprendizaje al adaptarlo a las necesidades individuales de cada estudiante, utilizando algoritmos de aprendizaje automático para proporcionar retroalimentación y recomendaciones personalizadas. Además, mejora la eficiencia educativa al automatizar tareas administrativas, liberando tiempo para actividades pedagógicas más significativas. La IA también brinda acceso a recursos de aprendizaje avanzados, como contenido interactivo y herramientas basadas en datos” describió la investigadora. “Finalmente, contribuye a la retención y finalización de programas educativos al identificar señales tempranas de desafíos académicos y ofrecer intervenciones personalizadas para apoyar a los estudiantes en su éxito académico. Se han identificado también como ventajas la escalabilidad, ya que la IA permite atender a un gran número de estudiantes de manera simultánea y la retroalimentación constante e inmediata que permite a los estudiantes mejorar sus habilidades y comprender sus procesos de aprendizaje” indicó. TIPOS DE INTELIGENCIAS ARTIFICIALES Y HERRAMIENTAS EN USO “Como ya comentamos, en el último año se ha generalizado la difusión y uso de herramientas de IA generativa. Entre las más conocidas aparecen el Chat GPT, que es un modelo de lenguaje natural basado en inteligencia artificial que permite generar conversaciones coherentes y humanas. Esta herramienta fue desarrollada por OpenAI y tiene múltiples versiones, cada una más poderosa que la anterior, teniendo una opción gratuita y otra paga. Por su parte, Microsoft ha desarrollado en colaboración con OpenAI su Bing Chat y Google su chatbot equivalente llamado Bard, estas últimas herramientas son gratuitas”. En relación con la implementación, a partir del estudio realizado y del análisis, los investigadores, recomiendan: Las actividades generadas por las herramientas de IA generativa deben ser revisadas por el docente para garantizar su calidad y pertinencia.",
+        "date": "01/12/2023 :10:18:0:0",
+        "user": "Gonza Dicosimo",
+        "url": "https://www.econ.unicen.edu.ar/noticias/uso-de-la-inteligencia-artificial-generativa-en-la-ensenanza-de-contabilidad-experiencias",
+        "urlToImage": "https://www.econ.unicen.edu.ar/sites/default/files/styles/destacada_noticia/public/2023-12/nota.jpg?h=37e58d0c&itok=x6zc2yAo",
+        "stars": 0.0
+    },{
+        "title": "EL ECOSISTEMA AGROTECH EN TANDIL: ENTREVISTA A BELÉN ARDITI",
+        "description": "El Ecosistema Agrotech en Tandil: Entrevista a Belén Arditi. Belén Arditi hizo hincapié en los grupos del sector agrícola que adoptan estas tecnologías y se refirió especialmente a los contratistas. “Son los que se desempeñan en las diferentes actividades y labores, por ejemplo, de siembra, de fertilización, de pulverizaciones. Que tienen máquinas agrícolas, sobre todo equipos grandes de alta inversión. Y suelen trabajar en establecimientos agrícolas que no cuentan con maquinarias propias” describió. Ese grupo de contratistas es un segmento también denominado de adopción temprana como alternativa al productor agrícola, como los mencionados en la “Parte II” de la entrevista a Arditi. En estos párrafos, la investigadora, profundiza e intenta esclarecer la adopción de tecnología en la cadena agrícola. “Se adopta tecnología, por ejemplo, en relación a las aplicaciones selectivas o dirigidas de herbicidas, para mitigar un poco o minimizar el impacto ambiental”. Sobre su aplicación detalló, “en cada dosis de herbicida aplicado, se detecta que hay maleza a partir de algoritmos y o de un índice denominado índice verde, y el control de malezas es el objetivo específico para aplicar esta tecnología en la cadena”. ¿Qué tipo de tecnología o qué tipo de innovación de la industria 4.0 se aplica en la cadena agrícola en la región? “Aunque, en menor medida, es la siembra y la fertilización variable, que forma parte de lo que se llama agricultura por ambiente y está relacionado, al armado de lotes o de ambientación para eficientizar el uso de semillas y fertilizantes” respondió Arditi, y continuó. “Si bien la tasa de adopción todavía es muy baja, que ronda alrededor de un 5% de los productores agrícolas, reconocen que la zona fue pionera en relación a toda la Argentina para establecer la agricultura por ambiente. Y tiene que ver con un poco también la dimetría de los campos de la ciudad”. Esto refiere a las condiciones de la ciudad, si son propicias para adoptar este tipo de tecnologías. “Un gran número de adoptantes, de productores del sector, adoptan lo que son las plataformas digitales. Son aplicaciones que permiten obtener una visualización integral de los campos, utilizar diferentes tecnologías, imágenes satelitales, georreferenciación, tecnologías de índice verde, entre otras, las cuales generan información del negocio en general y específica, en particular, de los lotes, cultivos, malezas, maquinarias” enumeró la investigadora, y especificó que, en general, esta adopción ya se encuentra en fase de adopción temprana. “Algo importante relacionado a esto es que las tecnologías, fundamentalmente, que fueron incorporadas por estos grupos de productores agrícolas, adoptantes tempranos, son maquinarias. Por lo tanto, tienen un alto volumen de inversión. Son maquinarias que suelen tener a las tecnologías de la industria 4.0 embebidas dentro de las maquinarias. Por ahora, hacia eso se orienta la adopción de tecnologías en el sector agrícola”. Obstáculos para la adopción. En el área de análisis, también se presentaron algunas dificultades, en este caso en la región Mar y Sierra. Ante esta situación, Arditi recordó, “ahí encontramos varios puntos interesantes, que incluso los charlamos con ellos. El driver o el disparador de adopción, como pensábamos, es de tipo económico, relacionados a maximizar la rentabilidad o mejorar la productividad o eficientizar el uso de insumos”. Sin embargo, la investigadora, comentó que se encontraron con algunos productores que mencionaron su orientación a la innovación, o su concientización con el cambio climático, como un factor determinante para adoptar tecnologías que minimicen el impacto ambiental, como por ejemplo, las aplicaciones dirigidas de herbicidas a la fertilización variable. En resumen, Arditi dijo, “si bien los motivos siguen siendo económicos, hay un punto de sustentabilidad ambiental muy importante para la adopción.",
+        "date": "29/09/2023:12:17:0:0",
+        "user": "none",
+        "url": "https://www.econ.unicen.edu.ar/noticias/el-ecosistema-agrotech-en-tandil-entrevista-belen-arditi",
+        "urlToImage": "https://www.econ.unicen.edu.ar/sites/default/files/styles/destacada_noticia/public/2023-09/agtech.jpg?h=1f063790&itok=qCB0fWd7",
+        "stars": 0.0
+    },{
+        "title": "Becas posdoctorales en todas las disciplinas en Europa",
+        "description": "La Secretaría de Ciencia y Tecnología (SeCyT) de la Facultad de Ciencias Económicas de la Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN) convoca a jóvenes graduados y estudiantes próximos a graduarse (a más tardar en Julio 2024) a presentarse a esta convocatoria de Becas de Iniciación a la Investigación en alguna de las temáticas troncales de Administración, Contabilidad, Economía Empresarial o Gestión Tecnológica. El principal objetivo de estas becas es apuntalar las vocaciones científicas en jóvenes que aspiren a explorar (y eventualmente desarrollar) una trayectoria de carrera con alto potencial de contribución a la ‘Investigación’. Estas becas se instrumentarán como designaciones docentes, de carácter interino, con el propósito de acompañar a los candidatos seleccionados a una postulación posterior a becas doctorales externas del Sistema Nacional de Ciencia, Tecnología e Innovación (SNCTI) de la República Argentina (ejemplo, CONICET, CICPBA, ANPCyT). Los candidatos seleccionados se incorporarán a alguno de los proyectos de investigación que se encuentran formalmente acreditados en el ámbito de nuestra Facultad y se les asignará un director que dirigirá su Plan de Trabajo y guiará su postulación a las becas doctorales del SNCTI, que eventualmente podrá concretarse en 2024 o 2025, de acuerdo al grado de avance en el proyecto de cada candidato seleccionado y conforme al calendario de convocatorias de los distintos organismos de promoción. La designación será por un plazo máximo de un (1) año, pudiendo ser renovable por un segundo año cuando existiera una evaluación favorable del Director de la Beca y de la Secretaría de Ciencia y Tecnología. Eventualmente, en el caso de que los candidatos seleccionados obtengan efectivamente una beca doctoral del SNCTI, la designación se extenderá hasta el inicio del período de la beca doctoral externa. Los interesados en acceder a la Beca de Iniciación a la Investigación podrán postularse hasta el día lunes 11 de diciembre de 2023, enviando vía email a secyt@econ.unicen.edu.ar, la siguiente documentación requerida: Curriculum Vitae, Certificado Analítico, Descripción del tema de interés (aprox. 300 palabras), Declaración de propósito, indicando sus motivaciones y perspectivas de desarrollo de carrera (aprox. 600 palabras). Los postulantes podrán sugerir al eventual director del Plan de Trabajo, quién en todos los casos deberá contar con expertise en el tema de interés y haber alcanzado la Categoría III como mínimo en el Sistema Nacional de Categorización de docentes-investigadores (Programa de Incentivos o PRINUAR). Máximo de becas a otorgar: 3 (tres), sujeto a evaluación de la Comisión ad hoc que intervenga en el proceso de selección. Fecha de inicio del período de beca: 1 de marzo de 2024. Estipendio de la beca: Los jóvenes graduados que eventualmente resulten beneficiarios de la Beca de Iniciación a la Investigación serán designados en la categoría de Ayudante Diplomado con dedicación exclusiva. Los estudiantes avanzados próximos a graduarse serán designados en la categoría de Ayudante Alumno con dedicación parcial, conforme a la normativa vigente en el sistema universitario. Detalles adicionales relativos a las becas y los estipendios vigentes se encuentran disponibles en la Secretaría de Ciencia y Tecnología de la Facultad. Secretaría de Ciencia y Tecnología, Facultad de Ciencias Económicas, UNICEN.",
+        "date": "15/11/2023:17:55:0:0",
+        "user": "none",
+        "url": "https://www.econ.unicen.edu.ar/noticias/becas-de-iniciacion-la-investigacion-en-ciencias-economicas",
+        "urlToImage": "https://www.econ.unicen.edu.ar/sites/default/files/styles/destacada_noticia/public/2023-11/becas.jpg?h=10d422fa&itok=Fyx-vSYN",
+        "stars": 0.0
+    },{
+        "title": "DÍA DEL LICENCIADO EN ADMINISTRACIÓN",
+        "description": "Saludamos a los Graduados en el día del Licenciado en Administración.",
+        "date": "15/12/2023:14:47:0:0",
+        "user": "Administrativo",
+        "url": "https://www.econ.unicen.edu.ar/noticias/dia-del-licenciado-en-administracion",
+        "urlToImage": "https://www.econ.unicen.edu.ar/sites/default/files/styles/destacada_noticia/public/2023-12/dia%20lic%20adm_0.jpg?h=36892deb&itok=p0LlOVL2",
+        "stars": 0.0
+    },{
+        "title": "162º 1RA PARTE - COLACIÓN DE GRADO - 28 DE OCTUBRE 2023",
+        "description": "El área de Graduados de la Facultad de Ciencias Económicas / Unicen invita a la 162º - 1ra Parte - Colación de Grado y Posgrado. La misma tendrá lugar el sábado 28 de Octubre a las 11 hs. en el Auditorio del Centro Cultural Universitario Irigoyen 662. Tandil. Auxiliar Administrativo Contable: SCAVUZZO, Marina. Contador Público: ACOSTA, Silvina Susana, BARRAZA, Karina Alejandra, DIAZ NARDELLI, Belén Natividad, FUENTES, Joaquín, LAZZARO, Sofía, MACCHI, Aldana, MIRAGLIO, Sebastián, MORDENTTI, Isaías, RODRIGUEZ, María Lucía. Licenciado en Administración: ECHEVERRÍA, Joaquín, IPPOLITI, Nazarena, MERLO, Alejandrina, MACEDO, Raúl Alberto, RISUEÑO, Romina Gisele, VITTORI, Franco. Magister en Administración de Negocios: ALVES, Daniela, CUESTAS, Natanael, CARRERAS, Ignacio Augusto, COTTI, Gastón Daniel, DABIDOS, Mercedes, GIULIODORI LOVECCHIO, Eugenia, MORENO, Santiago Alberto, NIELSEN, Oscar Ricardo, PERET, Marcos Jesús, PROVASI, Marcos Raúl, UMFURER, Marcos Luis, VIDELA, Marianela. Especialista en Gestión Estratégica de Organizaciones de Salud: GATICA, Sandra Elizabeth. Doctor en Administración: CARATTOLI, Mariela Cecilia.",
+        "date": "25/10/2023:13:52:0:0",
+        "user": "none",
+        "url": "https://www.econ.unicen.edu.ar/noticias/162o-1ra-parte-colacion-de-grado-28-de-octubre-2023",
+        "urlToImage": "https://www.econ.unicen.edu.ar/sites/default/files/styles/destacada_noticia/public/2023-10/colaci%C3%B3n%20web.png?h=674ba974&itok=ESSCWWCT",
+        "stars": 0.0
+    },{
+        "title": "SEBASTIÁN AUGUSTE: “LA CIUDAD DE TANDIL HA IDO VARIANDO SU ESTRUCTURA ECONÓMICA”",
+        "description": "En un análisis y desarrollo sobre los datos obtenidos del censo 2022 a nivel local, en las últimas semanas realizamos un nutrido intercambio con el doctor en Economía Sebastián Auguste, quien compartió su visión y profundizó el tema con algunas ideas y reflexiones. Según el último censo, la población de Tandil alcanzó los 150.000 habitantes. Esto refleja las diferencias entre las proyecciones realizadas sobre la base del anterior censo en torno al 5,6%. De hecho, la tasa de crecimiento anual de la población se ubicó, prácticamente, 0,5% por encima del promedio regional, en el período intercensal. Ante esta afirmación, Auguste apuntó a esta evolución y su sostenibilidad en el tiempo, y a las fuerzas que infieren en la diferenciación. Al mismo tiempo, repasó los desafíos que implica desde el punto de vista de infraestructura, ambiental y en cuanto al financiamiento, entre otros. “Según el último Censo la población argentina creció 14.8% entre 2022 y 2010, mientras que la de Tandil creció 20,5% entre iguales fechas. El municipio de Tandil pasó de tener 124.631 a 150.162 habitantes. Esto equivale a una tasa de crecimiento anual de nuestra población del 1,5%, o podemos decir que el municipio tiene por día 5,8 personas nuevas para atender, lo que requiere al menos dos casas por día para alojar el crecimiento poblacional” afirmó Sebastián Auguste, y agregó, “claramente la ciudad ha crecido atrayendo a migrantes internos, y eso se ve en el día a día”. En cuanto al crecimiento poblacional, el economista destalló que, “por un lado le da escala al municipio, y se aprovechan mejor muchos servicios públicos, pero por otro pone stress en la infraestructura local. La densidad poblacional en la zona céntrica ha crecido mucho, con la construcción en altura, y la expansión de la ciudad tiene para un lado el límite de las sierras. La pregunta que muchos se hacen es si este crecimiento es sostenible”. También se refirió al tamaño de la ciudad, “no es para nada grande en comparación con las ciudades del mundo, y también en comparación con otras grandes ciudades del país. Hace mucho que se habla de un Tandil de 200 mil habitantes, y a la tasa intercensal más reciente, esto recién pasaría en 2041. Es probable que el crecimiento no haya sido lineal entre los censos, y que se haya acelerado por la pandemia, por el fenómeno global que han llamado La Gran Renuncia”. Ante esta afirmación, Sebastián Auguste argumentó, “esto sumado al avance de la tecnología que nos permite trabajar más en forma remota es un combo ideal para atraer gente a Tandil. Este fenómeno de reubicación de la población aún está sucediendo, pero no es algo pasajero, y luego se volverá a una migración más normal” y agregó, “con la población actual y el crecimiento observado, no veo grandes problemas a futuro para manejar la ciudad, y creo que muchas cosas se han hecho bien en los últimos años previendo este crecimiento”. El profesional compartió una experiencia personal para acompañar su argumento respecto al transporte en la ciudad. “Estuve hace poco en Nueva York por un par de semanas y tuve tiempo de analizar y recorrer. Allí se ve muy claro la Gran Renuncia. Ha caído drásticamente el transporte hacia el centro de la ciudad, y se ven muchísimos locales en alquiler. La gente se ha mudado en forma masiva a barrios más periféricos y se ve el crecimiento de pequeños centros comerciales en los barrios aledaños. Las compras online han desplazado muchísimo a las compras presenciales y eso descongestiona”. Y sugirió un camino posible: “si vemos esta tendencia global, Tandil podría evitar la congestión en el centro si desarrolla otros centros en barrios, o si desarrolla pueblos periféricos, como la idea de desarrollar más Gardey. Creo que es clave que la ciudad tenga una estrategia fuerte de mantener sus atractivos. Puede seguir creciendo un poco más sin perderlos”. Sobre el “espíritu emprendedor” de Tandil y su futuro “Algo que diferencia a Tandil de otras",
+        "date": "29/09/2023:11:58:0:0",
+        "user": "none",
+        "url": "https://www.econ.unicen.edu.ar/noticias/sebastian-auguste-la-ciudad-de-tandil-ha-ido-variando-su-estructura-economica",
+        "urlToImage": "https://www.econ.unicen.edu.ar/sites/default/files/styles/destacada_noticia/public/2023-09/seba.jpg?h=a7177c2c&itok=EVo8s1_O",
+        "stars": 0.0
+    },
+    {}
+    ],
+    "arte": [
+        {
+            "title": "",
+            "description": "",
+            "date": "DD/MM/2023:00:00:0:0",
+            "user": "",
+            "url": "",
+            "urlToImage": "",
+            "stars": 0.0
+        },
+        {
+            "title": "Convocatoria obras de teatro. Curso introductorio",
+            "description": "Convocatoria abierta para la presentación de obras de teatro para participar durante el Curso Introductorio 2024. Fecha límite de presentación 16 de febrero 2024. La cantidad de obras, las fechas y el lugar de presentación se definirán a partir de febrero de 2024. Bases y condiciones: OBRAS_DE_TEATRO_BASES_2024.docx. Más información: coordacad@arte.unicen.edu.ar",
+            "date": "15/12/2023:00:00:0:0",
+            "user": "",
+            "url": "https://www.arte.unicen.edu.ar/convocatoria-obras-de-teatro-curso-introductorio/",
+            "urlToImage": "https://www.arte.unicen.edu.ar/wp-content/uploads/2023/12/cursointro2024-1024x1024.jpeg",
+            "stars": 0.0
+        },
+        {
+            "title": "Octava charla virtual. Ciclo “Manifestando lo sutil” 2023",
+            "description": "Dentro del marco de una colaboración interinstitucional e internacional se presenta la charla “Imagen desde la sonoridad” a cargo de Fidel Lucas Achirico*. Se llevará a cabo el viernes 15 de diciembre del 2023 a las 15:30 hs. (Argentina), 12.30 hs. (México) y 14.30 hs. (Bolivia) de manera virtual, gratuita y sin inscripción previa. El intercambio estará coordinado por la Prof. Briseida Cerón Leyva, docente de la Licenciatura en Teatro del Instituto de Artes de la Universidad Autónoma de Hidalgo.\n\nEste espacio de charlas virtuales nos ha permitido unir a diversos estudiosos de la voz para los diferentes medios de comunicación. Entre gente de locución, actores, actrices, docentes, investigadores, cantantes, formadores de formadores, entre otres, se han obtenido valiosas aportaciones que hoy en día refrescan, actualizan, hacen retrospectiva y promueven la difusión de un tema tan importante como lo es la voz humana y sus diversas vertientes.\n\nAhora bien, América Latina nos ha contado su historia, de alguna forma, desde las realidades que chocan constantemente. Percepciones y vivencias varias permiten que lo humano transite constantemente entre lo que los medios de comunicación nos quieren hacer mirar y entre las múltiples miradas y voces de aquellos que habitamos estos países, estados y provincias que tienen sus propias narrativas y realidades. Pues bien, de entre esas voces y de entre lo humano surge el Teatro de los Andes. Compañía boliviana de teatro que tiene como característica principal, el trabajo y la creación colectiva de las obras que presentan. Fue fundado por César Brie en agosto de 1991, y tiene su sede en Yotala cerca de Sucre, Bolivia. Su colaborador y amigo Giampaolo Nalli lo siguió en la aventura y aunque no era actor, juntos contribuyeron a crear una experiencia única, en el teatro contemporáneo boliviano.\n\nActualmente, Gonzalo Callejas, Alice Padilha Guimaraes y Lucas Achirico son quienes integran y siguen dando vida al grupo manteniendo los mismos principios de su fundación. Además, Lucas Achirico junto con sus compañeros dictan de forma esporádica un importante taller-residencia internacional en que comparten su investigación sobre elementos actorales, vocales, dramatúrgicos y de puesta en escena. En el año 2004, en paralelo a su trabajo en el Teatro de los Andes comienza a co-dirigir a su compañera Danuta Zarzyka en un trabajo de clown que da como resultado final la obra titulada “Desembledos”. Junto con esta obra nace el Grupo Entre dos Aguas un Teatro. En este grupo familiar Lucas se ocupa de la Dirección Artística. Actualmente están radicados en Polonia pero siguen haciendo giras por Latinoamérica.\n\nEste Ciclo de charlas nace en el año 2021 de la mano del Dr. Rubén Darío Maidana, docente de Educación de la Voz del Departamento de Teatro de la Licenciatura en Teatro de la Facultad de Arte de la Universidad Nacional del Centro de la Provincia de Buenos Aires con sede en Tandil, Buenos Aires. Desde sus inicios se propuso crear un espacio de intercambio de experiencias teóricas y prácticas vinculadas con la voz humana.\n\nRubén Maidana luego de haber sido invitado como representante de Argentina al 2do Encuentro Internacional de la voz y la palabra – Marcos Teóricos para el futuro de la Práctica y la Pedagogía Vocal, evento organizado en conjunto por el Centro de Estudios para el Uso de la Voz (CEUVOZ) y Voice an Speech Trainers Association (VASTA) establece contacto con los participantes que representaban a cada uno de los Estados de México. Allí surge su propuesta de constituir una red interuniversitaria de trabajo mancomunado de difusión de experiencias docentes vinculadas con el entrenamiento de la voz para el quehacer teatral. Dicho proyecto lleva por título Expandiendo el eco de la voz y la integran la Facultad de Arte de la UNICEN (Tandil, Buenos Aires, Argentina); el Instituto de Artes de la Universidad Autónoma de Hidalgo; la Facultad de Artes Escénicas de la Universidad Autónoma de Nuevo León y la Escuela Nacional de Arte Teatral –ENAT- dependiente del Instituto Nacional de Bellas Artes y Literatura (INBAL) todas instituciones de México.",
+            "date": "13/12/2023:00:00:0:0",
+            "user": "",
+            "url": "https://www.arte.unicen.edu.ar/octava-charla-virtual-ciclo-manifestando-lo-sutil-2023/",
+            "urlToImage": "https://www.arte.unicen.edu.ar/wp-content/uploads/2023/03/MANIFESTANDO-LO-SUTIL-oencabezado.png",
+            "stars": 0.0
+        },
+        {
+            "title": "CRIA. Experiencias criadas en Facultad de Arte",
+            "description": "Evento anual organizado por la Secretaría de Extensión, CDAB, y los Departamentos de Teatro y de Artes Audiovisuales que tuvo su segunda edición en el martes 5 de diciembre. CRIA reunió una selección de 56 producciones de estudiantes de las carreras de Profesorado y Licenciatura de Teatro y Realización Integral en Artes Audiovisuales distribuidas en tres bloques horarios. Cada bloque consistió en una selección de trabajos presentados en distintos espacios de la Facultad.\n\nSe compartieron producciones de las materias Dirección de arte, escenografía, guión 1 y 2, Rítmica, Pensamiento proyectual, Iluminación y cámara, Dramaturgia, Educación de la Voz 1 y 2, Producción ejecutiva, Realización 3 y 4, Psicología del aprendizaje, Didáctica general y especial del juego dramático, Procesos del juego, Interpretación 1 y 2, Música y coreografía, Dirección y Expresión corporal 1 y 2. El cierre del evento estuvo a cargo del Centro de Estudiantes de la Facultad con una hamburgueseada.\n\nEste evento se propone como un espacio de encuentro entre las producciones de los procesos de formación artística, las carreras que se dictan en la Facultad, y la comunidad toda. Habitar y compartir el espacio desde las artes, creemos que abona también a reconocernos y fortalecernos como parte de una comunidad, profundizando el sentido de pertenencia con la misma en sus múltiples sentidos. Desde la Secretaría de Extensión queremos agradecer y destacar especialmente el trabajo de la directora del Departamento de Teatro, Lucrecia Etchecoin así como también la incorporación del Departamento de Artes Audiovisuales, el Departamento de Educación y el CDAB en la organización de la actividad. Ademas felicitamos y agradecemos a todas las personas que compartieron sus trabajos, tanto estudiantes como docentes, al público que nos acompañó, y un agradecimiento particular a los y las trabajadores de extensión, Cdab, área de comunicación, mantenimiento, informes y pañol, red necesaria para que este evento sucediera. Con este cierre nos vamos arrimando al fin de un año de mucho trabajo, aprendizajes y celebraciones con el orgullo y la satisfacción de ser parte de la Universidad Pública Argentina y en particular de la UNICEN.",
+            "date": "11/12/2023:00:00:0:0",
+            "user": "",
+            "url": "https://www.arte.unicen.edu.ar/cria-experiencias-criadas-en-facultad-de-arte/",
+            "urlToImage": "https://www.arte.unicen.edu.ar/wp-content/uploads/2023/12/1205-CRIA-135-1035x425.jpg",
+            "stars": 0.0
+        },
+        {
+            "title": "La noche más corta 2023",
+            "description": "El lunes 4 de diciembre, en la Sala INCAA UNICEN, se llevó adelante una nueva edición de La noche más corta, un espacio de proyección y encuentro, promovido desde la Facultad de Arte, que reúne una selección de producciones realizadas por estudiantes de la carrera de Realización Integral en Artes Audiovisuales en el período 2023.\n\nLa organización del evento estuvo a cargo del Departamento de Artes Audiovisuales y la Secretaría de Extensión de la Facultad de Arte, quienes dieron la bienvenida ante una sala llena de estudiantes, docentes, graduades, actores y actrices, familiares, amigues y público en general.\n\nSe presentó una selección de 20 trabajos de las cátedras Composición digital, Dirección de Arte, Dirección de fotografía, Montaje, Realización 1, Realización 2, Animaciòn, Legislaciòn, Diseño y postproducción de sonido, Realización 3, Iluminación y cámara, guión 2 y Realización 4.\n\nDesde la Secretaría de Extensión queremos agradecer y destacar el trabajo mancomunado de toda la comunidad de nuestra Facultad para la realización de este evento. Especialmente agradecer a les directores del departamento Cecilia Christensen y Javier Castillo, a Sebastian Nieto quien colaboró con las animaciones, a les trabajadores de la Facultad y del Espacio INCAA y felicitar a les estudiantes y docentes por la gran calidad de los trabajos realizados. A días de cumplirse los 40 años de democracia, celebramos poder compartir las creaciones que se gestan en la universidad pública con toda la comunidad que las hace posible.",
+            "date": "11/12/2023:00:00:0:0",
+            "user": "",
+            "url": "https://www.arte.unicen.edu.ar/la-noche-mas-corta-2023-2/",
+            "urlToImage": "https://www.arte.unicen.edu.ar/wp-content/uploads/2023/12/1204-La-Noche-mas-Corta-14-1035x425.jpg",
+            "stars": 0.0
+        }
+    ]
+    }

@@ -1,0 +1,45 @@
+<div class="navbar">
+    <div class="navbar-left">
+      <button class="menu-icon" (click)="toggleOverlay()">
+        <i class="gg-menu"></i>
+      </button>
+    </div>
+  
+    <div class="navbar-center">
+      <h1>{{ study }}</h1>
+    </div>
+  
+    <div class="navbar-right">
+      <span>Hola, {{ name }}!</span>
+    </div>
+  </div>
+  
+  @if ( overlayActive ) {
+    <div class="overlay">
+        <div class="overlay_content"></div>
+        <a (click)="deleteAccount()">Borrar cuenta</a>
+        <a (click)="logOut()">Cerrar sesión</a>
+    </div>
+  }
+  <div class="news-container">
+    <div class="main-news">
+      
+      <div class="news-card">
+        <span>Noticia</span>
+      </div>
+    </div>
+  
+    <div class="secondary-news">
+      <div class="news-card">
+        <span>Noticia</span>
+      </div>
+      <div class="news-card">
+        <span>Noticia</span>
+      </div>
+      <div class="news-card">
+        <span>Noticia</span>
+      </div>
+    </div>
+    
+  </div>
+  
