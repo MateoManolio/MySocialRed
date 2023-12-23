@@ -1,6 +1,6 @@
 export const schema = {
     'news': ({
-      id: Number,
+      study: String,
       title: String,
       description: String,
       date: String,

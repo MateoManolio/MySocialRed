@@ -63,6 +63,10 @@ export class LoginComponent {
             sessionStorage.setItem('username', user.username);
             sessionStorage.setItem('study', user.study);
             sessionStorage.setItem('name', user.name);
+            sessionStorage.setItem('surname', user.surname);
+            sessionStorage.setItem('profession', user.profession);
+            
+
             this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Logueado exitoso!' });
             this.router.navigate(['house']);
           } else {

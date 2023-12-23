@@ -41,15 +41,5 @@ services:
     volumes:
       - ./frontend:/usr/src/app
 
-  proxy:
-    build: loadbalancer
-    container_name: nginx
-    restart: always
-    ports:
-      - "80:80"
-    links:
-      - backend
-      - frontend
-
 volumes:
   mongo-data:

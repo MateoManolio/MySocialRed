@@ -28,9 +28,8 @@ body {
 .navbar h1,
 .navbar span {
   color: #edf0f1;
-  padding: 10px; /* Reducido el padding para que sea más compacto */
+  padding: 10px;
 }
-
 
 .overlay {
   display: flex;
@@ -77,10 +76,8 @@ body {
   outline: none;
 }
 
-/* Estilo adicional para el icono de menú */
 .menu-icon i {
   font-size: 1.5rem;
-  color: #edf0f1;
 }
 
 .menu-icon:hover {
@@ -91,30 +88,6 @@ body {
   transform: scale(0.95);
 }
 
-.news-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.main-news,
-.secondary-news {
-  width: 50%; /* Comparte el espacio en dos columnas */
-}
-
-.news-card {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
-.gg-menu {
-  transform: scale(var(--ggs,1))
- }
- 
 .gg-menu,
 .gg-menu::after,
 .gg-menu::before {
@@ -124,16 +97,128 @@ body {
   width: 20px;
   height: 2px;
   border-radius: 3px;
-  background: currentColor
+  background: currentColor;
 }
 
 .gg-menu::after,
 .gg-menu::before {
   content: "";
   position: absolute;
-  top: -6px
+  top: -6px;
 }
 
 .gg-menu::after {
-  top: 6px
-} 
+  top: 6px;
+}
+
+.slider-container {
+  width: 100vh;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.slider-images {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.slider-img img, .no-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  filter: blur(4px); /* Aplicar desenfoque por defecto */
+  transition: filter 0.7s ease;
+}
+
+.no-image {
+  background-color: #080202; /* Color de fondo cuando no hay imagen */
+}
+
+.slider-img, .no-image {
+  width: 110px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.7s ease;
+}
+
+
+.slider-img:hover img, .no-image:hover img {
+  filter: blur(0); /* Quitar el desenfoque al hacer hover */
+}
+
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child {
+  height: 480px;
+}
+
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6) {
+  height: 560px;
+}
+
+.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5) {
+  height: 665px;
+}
+
+.slider-img h1{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: rotate(270deg);
+  transition: 0.7s ease;
+}
+.details{
+  position: absolute;
+  bottom: 43px;
+  left: 43px;
+}
+.details h2{
+  font-family: "Jost", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}
+.details p{
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 33px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}
+
+.slider-img.active{
+  width: 750px !important;
+  height: 700px !important;
+  filter: blur(0); 
+}
+
+.slider-img.active img {
+  filter: blur(0);
+}
+
+.slider-img.active h1{
+   display: none;
+}
+.slider-img.active .details p, .slider-img.active .details h2{
+  display: block;
+}

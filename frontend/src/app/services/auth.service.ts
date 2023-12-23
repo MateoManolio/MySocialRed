@@ -1,7 +1,8 @@
 import { Injectable, inject } from '@angular/core';
 import { User } from '../interfaces/auth';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
+import { News } from '../interfaces/news';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +24,20 @@ export class AuthService {
 
   deleteUser(username: string): Observable<any> {
     return this.http.delete(`${this.api}/users/${username}`);
+  }
+
+  getNewsByStudy(study: string): Observable<News[]> {
+    return this.http.get<News[]>(`${this.api}/news/`).pipe(
+      map((noticias: News[]) => {
+        // Filtra las noticias según el estudio
+        return noticias.filter(noticia => noticia.study.includes(study) && !noticia.title.includes("null"));
+
+      })
+    );
+  }
+
+  updateUser(username: string, updatedUserData: Partial<User>): Observable<any> {
+    return this.http.put(`${this.api}/users/${username}`, updatedUserData);
   }
 
 }

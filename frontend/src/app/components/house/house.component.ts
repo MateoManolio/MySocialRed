@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 import { AuthService } from '../../services/auth.service';
@@ -6,6 +6,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { catchError } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import { ConfirmDiagComponent } from './confirm-diag/confirm-diag.component';
+import { ChangeDetails } from './change-details/change-details.component';
 
 @Component({
   selector: 'app-house',
@@ -15,12 +16,18 @@ import { ConfirmDiagComponent } from './confirm-diag/confirm-diag.component';
   styleUrl: './house.component.css'
 })
 
-export class HouseComponent {
-  study = sessionStorage.getItem('study');
-  name = sessionStorage.getItem('name'); //No existe un metodo capitalize
-  username = sessionStorage.getItem('username')
-  overlayActive = false;
+export class HouseComponent implements OnInit {
+  study = sessionStorage.getItem('study') || '';
+  username = sessionStorage.getItem('username') || '';
+  name = sessionStorage.getItem('name') || ''; //No existe un metodo capitalize
+  surname = sessionStorage.getItem('surname') || '';
+  profession =  sessionStorage.getItem('profession')|| '';
 
+
+  overlayActive = false;
+  noticias: any[] = [];
+  totalNoticias: any[] = [];
+  currentIndex: number = 0;
 
   constructor (
     private router: Router,
@@ -28,6 +35,22 @@ export class HouseComponent {
     private messageService: MessageService,
     private dialog: MatDialog,
   ) {};
+
+  ngOnInit() {
+    this.loadDefaultCards();
+    this.authService.getNewsByStudy(this.study || '').subscribe(
+      (noticias: any[]) => {
+        this.totalNoticias = noticias;
+        noticias = noticias.slice(0, 7); //Iba a hacer para cargar mas noticias
+        for (let i = 0; i < this.noticias.length && i < noticias.length; i++) {
+          this.noticias[i] = noticias[i] || {}; // Agrega la nueva noticia o un objeto vacío si no hay más
+        }
+      },
+      (error) => {
+        console.error('Error al obtener noticias', error);
+      }
+    );
+  }
 
   toggleOverlay() : void{
       this.overlayActive = !this.overlayActive;
@@ -47,6 +70,29 @@ export class HouseComponent {
       if (result) {
         this.performAccountDeletion();
         this.logOut();
+      }
+    });
+  }
+
+  changeDetails() : void {
+    const dialogRef = this.dialog.open(ChangeDetails, {
+      data: {
+        username: this.username,
+        name: this.name,
+        surname: this.surname,
+        profession: this.profession,
+      },
+    });
+  
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result) {
+        this.name = result.name;
+        this.surname = result.surname;
+        this.profession = result.profession;
+        sessionStorage.setItem('name', result.name);
+        sessionStorage.setItem('surname', result.surname);
+        sessionStorage.setItem('profession', result.profession);
+        
       }
     });
   }
@@ -73,6 +119,30 @@ export class HouseComponent {
         this.messageService.add({ severity: 'success', summary: 'Success', detail: response.message });
     });
   }
+
+  private loadDefaultCards(): void {
+    for (let i = 0; i < 7; i++) {
+      this.noticias.push({
+        study: "",
+        title: "No hay nada nuevo",
+        description: "Es una noticia vacia.",
+        date: "",
+        user: "",
+        url: "",
+        urlToImage: "",
+        starts: ""
+      });
+    }
+  }
+
+
+  activeIndex: number | null = null;
+
+  setActiveIndex(index: number): void {
+    this.activeIndex = index;
+  }
+
+
 }
     
 

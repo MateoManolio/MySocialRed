@@ -1,4 +1,4 @@
-<div class="navbar">
+  <div class="navbar">
     <div class="navbar-left">
       <button class="menu-icon" (click)="toggleOverlay()">
         <i class="gg-menu"></i>
@@ -17,29 +17,29 @@
   @if ( overlayActive ) {
     <div class="overlay">
         <div class="overlay_content"></div>
+        <a (click)="changeDetails()">Cambiar datos</a>
         <a (click)="deleteAccount()">Borrar cuenta</a>
         <a (click)="logOut()">Cerrar sesión</a>
     </div>
   }
-  <div class="news-container">
-    <div class="main-news">
-      
-      <div class="news-card">
-        <span>Noticia</span>
-      </div>
+
+  <section class="slider-container" [style.background-image]="'url(assets/bg-img.png)'" >
+    <div class="slider-images">
+      @for (item of noticias; track $index) {
+        <div (click)="setActiveIndex($index)" class="slider-img" [class.active]="$index === activeIndex">
+            @if (item.urlToImage) {
+              <img [src]="item.urlToImage" [alt]="item.alt"/>
+            } @else {
+              <img class="no-image"/>
+            }
+            <h1>{{ item.title }}</h1>
+            <div class="details">
+              <h2>{{ item.subtitle }}</h2>
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
+        } @empty {
+          <h1> No hay noticias.</h1>
+        }
     </div>
-  
-    <div class="secondary-news">
-      <div class="news-card">
-        <span>Noticia</span>
-      </div>
-      <div class="news-card">
-        <span>Noticia</span>
-      </div>
-      <div class="news-card">
-        <span>Noticia</span>
-      </div>
-    </div>
-    
-  </div>
-  
+  </section>

@@ -56,7 +56,7 @@ export class RegisterComponent {
           if (error.error instanceof ErrorEvent)  // Error del lado del cliente
             errorMessage = `Error: ${error.error.message}`;
           else // El backend devolvió un código de error
-            errorMessage = `Código de error: ${error.status}, Mensaje: ${error.message}`;
+            errorMessage = `Código de error: ${error.status}, Mensaje: ${error.error.message}`;
           
           this.messageService.add({ severity: 'error', summary: 'Error', detail: errorMessage });
           throw error;

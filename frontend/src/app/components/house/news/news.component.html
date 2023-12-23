@@ -1,1 +1,14 @@
-<p>news works!</p>
+<div class="news-detail-container">
+    <div class="news-detail-header">
+      <h2>{{ data.news.title }}</h2>
+      <p>Por {{ data.news.user }}</p>
+    </div>
+    <div class="news-detail-content">
+      <img [src]="data.news.url" alt="{{ data.news.title }}" class="news-detail-image" />
+      <p>{{ data.news.description }}</p>
+    </div>
+    <div class="confirmation-buttons">
+      <button class="back-button" (click)="onBackClick()">Volver</button>
+    </div>
+  </div>
+  

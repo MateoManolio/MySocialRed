@@ -1,0 +1,49 @@
+<div class="form-container">
+  <form [formGroup]="changeForm" (ngSubmit)="onSubmit()">
+    <h2>Cambiar datos de la cuenta</h2>
+
+    <div class="form-group">
+        <label for="username">DNI</label>
+        <input type="text" id="username" [value]="data.username" disabled>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" pInputText formControlName="name" class="w-full" name="name" [placeholder]="data.name"/>
+      @if (name.invalid && (name.dirty || name.touched)) {
+          @if (name.errors?.['required']) {<div class="block p-error">El nombre es requerido.</div>}
+          @if (name.errors?.['pattern']) {<div class="block p-error">El nombre no es valido.</div>}
+      }
+    </div>
+
+    <div class="form-group">
+        <label for="surname">Apellido</label>
+        <input pInputText formControlName="surname" type="text" id="surname" [value]="data.surname" [placeholder]="data.surname"/>
+        @if (surname.invalid && (surname.dirty || surname.touched)) {
+            @if (surname.errors?.['required']) {<div class="block p-error">El apellido es requerida.</div>}
+            @if (surname.errors?.['pattern']) {<div class="block p-error">El apellido no es valido.</div>}
+        }
+    </div>
+
+    <div class="form-group">
+      <label for="profession">Profesión</label>
+      <input pInputText formControlName="profession" type="text" id="profession" [value]="data.profession" [placeholder]="data.profession"/>
+      @if (profession.invalid && (profession.dirty || profession.touched)) {
+          @if (profession.errors?.['required']) {<div class="block p-error">La profesión es requerida.</div>}
+      }
+    </div>
+
+    <div class="form-group">
+      <label for="psw">Nueva contraseña</label>
+      <input pInputText formControlName="psw" type="password" id="psw" placeholder="Ingrese nueva contraseña"/>
+      @if (psw.invalid && (psw.dirty || psw.touched)) {
+          @if (psw.errors?.['required']) {<div class="block p-error">La contraseña es requerida.</div>}
+      }
+    </div>
+
+    <div class="buttons-container">
+      <button type="submit" [disabled]="changeForm.invalid">Guardar</button>
+      <button type="button" class="close-btn" (click)="closeDialog()">Cerrar</button>
+    </div>
+  </form>
+</div>
