@@ -17,13 +17,6 @@ import { ChangeDetails } from './change-details/change-details.component';
 })
 
 export class HouseComponent implements OnInit {
-  study = sessionStorage.getItem('study') || '';
-  username = sessionStorage.getItem('username') || '';
-  name = sessionStorage.getItem('name') || ''; //No existe un metodo capitalize
-  surname = sessionStorage.getItem('surname') || '';
-  profession =  sessionStorage.getItem('profession')|| '';
-
-
   overlayActive = false;
   noticias: any[] = [];
   totalNoticias: any[] = [];
@@ -36,9 +29,10 @@ export class HouseComponent implements OnInit {
     private dialog: MatDialog,
   ) {};
 
+
   ngOnInit() {
     this.loadDefaultCards();
-    this.authService.getNewsByStudy(this.study || '').subscribe(
+    this.authService.getNewsByStudy(this.study).subscribe(
       (noticias: any[]) => {
         this.totalNoticias = noticias;
         noticias = noticias.slice(0, 7); //Iba a hacer para cargar mas noticias
@@ -51,6 +45,12 @@ export class HouseComponent implements OnInit {
       }
     );
   }
+
+  get study() : string { return sessionStorage.getItem('study') || '' };
+  get username() : string { return sessionStorage.getItem('username') || '' };
+  get name() : string { return sessionStorage.getItem('name') || '' }; //No existe un metodo capitalize
+  get surname() : string { return sessionStorage.getItem('surname') || '' };
+  get profession() : string { return sessionStorage.getItem('profession') || '' };
 
   toggleOverlay() : void{
       this.overlayActive = !this.overlayActive;
@@ -86,9 +86,6 @@ export class HouseComponent implements OnInit {
   
     dialogRef.afterClosed().subscribe((result) => {
       if (result) {
-        this.name = result.name;
-        this.surname = result.surname;
-        this.profession = result.profession;
         sessionStorage.setItem('name', result.name);
         sessionStorage.setItem('surname', result.surname);
         sessionStorage.setItem('profession', result.profession);
@@ -135,13 +132,20 @@ export class HouseComponent implements OnInit {
     }
   }
 
+  currentNewsIndex = 0;
 
-  activeIndex: number | null = null;
-
-  setActiveIndex(index: number): void {
-    this.activeIndex = index;
+  handleScroll(event: WheelEvent): void {
+    const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
+  
+    if (scrollDirection === 'down' && this.currentNewsIndex < this.noticias.length - 1) {
+      this.currentNewsIndex++;
+    } else if (scrollDirection === 'up' && this.currentNewsIndex > 0) {
+      this.currentNewsIndex--;
+    } else if (scrollDirection === 'down' && this.currentNewsIndex === this.noticias.length - 1) {
+      // Si llega a la última noticia, vuelve a la primera
+      this.currentNewsIndex = 0;
+    }
   }
-
 
 }
     

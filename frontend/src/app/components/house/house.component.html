@@ -1,45 +1,47 @@
-  <div class="navbar">
-    <div class="navbar-left">
-      <button class="menu-icon" (click)="toggleOverlay()">
-        <i class="gg-menu"></i>
-      </button>
+  <div class="main-container">
+    <div class="navbar">
+      <div class="navbar-left">
+        <button class="menu-icon" (click)="toggleOverlay()">
+          <i class="gg-menu"></i>
+        </button>
+      </div>
+    
+      <div class="navbar-center">
+        <h1>{{ study }}</h1>
+      </div>
+    
+      <div class="navbar-right">
+        <span>Hola, {{ name }}!</span>
+      </div>
     </div>
+    
+    @if ( overlayActive ) {
+      <div class="overlay">
+          <div class="overlay_content"></div>
+          <a (click)="changeDetails()">Cambiar datos</a>
+          <a (click)="deleteAccount()">Borrar cuenta</a>
+          <a (click)="logOut()">Cerrar sesión</a>
+      </div>
+    }
   
-    <div class="navbar-center">
-      <h1>{{ study }}</h1>
-    </div>
+    
+  <div class="container" (wheel)="handleScroll($event)">
+    <div class="news-container">
+      @if (currentIndex !== -1) {
+      <div class="news">
+        @if (noticias[currentNewsIndex].urlToImage) {
+          <img [src]="noticias[currentNewsIndex].urlToImage"/>
+        } @else {
+          <img src="https://via.placeholder.com/1024x1024"/>
+        }
+        <div class="news-title">{{ noticias[currentNewsIndex].title }}</div>
+        <div class="news-description">{{ noticias[currentNewsIndex].description }}</div>
   
-    <div class="navbar-right">
-      <span>Hola, {{ name }}!</span>
+      </div>
+    }
     </div>
   </div>
   
-  @if ( overlayActive ) {
-    <div class="overlay">
-        <div class="overlay_content"></div>
-        <a (click)="changeDetails()">Cambiar datos</a>
-        <a (click)="deleteAccount()">Borrar cuenta</a>
-        <a (click)="logOut()">Cerrar sesión</a>
-    </div>
-  }
+  </div>
+  
 
-  <section class="slider-container" [style.background-image]="'url(assets/bg-img.png)'" >
-    <div class="slider-images">
-      @for (item of noticias; track $index) {
-        <div (click)="setActiveIndex($index)" class="slider-img" [class.active]="$index === activeIndex">
-            @if (item.urlToImage) {
-              <img [src]="item.urlToImage" [alt]="item.alt"/>
-            } @else {
-              <img class="no-image"/>
-            }
-            <h1>{{ item.title }}</h1>
-            <div class="details">
-              <h2>{{ item.subtitle }}</h2>
-              <p>{{ item.description }}</p>
-            </div>
-          </div>
-        } @empty {
-          <h1> No hay noticias.</h1>
-        }
-    </div>
-  </section>
