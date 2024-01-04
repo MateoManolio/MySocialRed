@@ -14,63 +14,62 @@
     align-items: center;
   }
   
-  .confirmation-message {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .confirmation-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .confirmation-buttons button {
-    flex: 1;
-    margin: 0 5px;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .confirm-button {
-    background-color: #4caf50;
-    color: #fff;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .confirm-button:hover {
-    background-color: #45a049;
-  }
-  
-  .confirm-button:active {
-    transform: scale(0.95);
-  }
-  
-  .confirm-button:focus {
-    outline: none;
-    border: 2px solid #217dbb;
-    box-shadow: 0 0 5px #217dbb;
-  }
-  
-  .cancel-button {
-    background-color: #f44336;
-    color: #fff;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .cancel-button:hover {
-    background-color: #d32f2f;
-  }
-  
-  .cancel-button:active {
-    transform: scale(0.95);
-  }
-  
-  .cancel-button:focus {
-    outline: none;
-    border: 2px solid #217dbb;
-    box-shadow: 0 0 5px #217dbb;
-  }
-  
+.confirmation-message {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.confirmation-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #45a049;
+}
+
+.confirm-button:active {
+  transform: scale(0.95);
+}
+
+.confirm-button:focus {
+  outline: none;
+  border: 2px solid #217dbb;
+  box-shadow: 0 0 5px #217dbb;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}
+
+.cancel-button:active {
+  transform: scale(0.95);
+}
+
+.cancel-button:focus {
+  outline: none;
+  border: 2px solid #217dbb;
+  box-shadow: 0 0 5px #217dbb;
+}

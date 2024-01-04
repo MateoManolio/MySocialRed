@@ -1,28 +1,20 @@
-# Dockerfile for Angular frontend (production)
+FROM node:latest AS build
+WORKDIR /app
 
-# Use an official Node.js runtime as a parent image for building
-FROM node:lts-alpine as build
-
-# Set the working directory in the container
-WORKDIR /usr/src/app
-
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
-
-
+# Install dependencies
+COPY package.json .
+COPY package-lock.json .
 RUN npm ci
 
-# Copy the application files to the working directory
+# Copy the application source
 COPY . .
 
-# Build the Angular application for production
-RUN npm run build
+# Build typescript
+RUN npm run build --prod
 
-# Use Nginx as a lightweight, efficient web server
-FROM nginx:alpine
+FROM nginx:stable-alpine
 
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /usr/src/app/dist /usr/share/nginx/html
+COPY --from=build /app/dist/ /usr/share/nginx/html
 
-# Expose the port on which Nginx runs
 EXPOSE 80

@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  height: 90vh;
+  height: 95vh;
   display: flex;
 }
 
@@ -65,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 600px;
+  width: 78vh;
   opacity: 0;
   transform: translateY(30px);
   transition-delay: .3s;
@@ -124,7 +124,7 @@ input {
 }
 
 input:checked + label {
-  width: 95vh;
+  width: 100vh;
 }
 
 input:checked + label .description {

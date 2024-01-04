@@ -24,24 +24,27 @@
       </div>
     }
   
-    
-  <div class="container" (wheel)="handleScroll($event)">
-    <div class="news-container">
-      @if (currentIndex !== -1) {
-      <div class="news">
-        @if (noticias[currentNewsIndex].urlToImage) {
-          <img [src]="noticias[currentNewsIndex].urlToImage"/>
-        } @else {
-          <img src="https://via.placeholder.com/1024x1024"/>
+
+    <div class="container" (wheel)="handleScroll($event)">
+      <div class="news-container">
+        <div class="scroll-buttons">
+          <button class="scroll-button" (click)="scrollNews('backward')"><i class="gg-chevron-up"></i></button>
+          <button class="scroll-button" (click)="scrollNews('forward')"><i class="gg-chevron-down"></i></button>
+        </div>
+        @if (currentIndex !== -1) {
+          <div class="news" (click)="toggleDescription()">
+            @if (noticias[currentNewsIndex].urlToImage) {
+              <img [src]="noticias[currentNewsIndex].urlToImage" />
+            } @else {
+              <img src="https://via.placeholder.com/1024x1024" />
+            }
+            <div class="news-title">{{ noticias[currentNewsIndex].title }}</div>
+          </div>
         }
-        <div class="news-title">{{ noticias[currentNewsIndex].title }}</div>
-        <div class="news-description">{{ noticias[currentNewsIndex].description }}</div>
-  
       </div>
-    }
     </div>
-  </div>
-  
-  </div>
+    
+    
+</div>
   
 

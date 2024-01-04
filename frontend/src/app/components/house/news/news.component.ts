@@ -1,7 +1,5 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { News } from '../../../interfaces/news';
-
 
 @Component({
   selector: 'app-news',
@@ -15,7 +13,7 @@ export class NewsComponent {
 
   constructor(
     public dialogRef: MatDialogRef<NewsComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { news: News }
+    @Inject(MAT_DIALOG_DATA) public data: { message: string }
   ) {}
 
   onBackClick(): void {

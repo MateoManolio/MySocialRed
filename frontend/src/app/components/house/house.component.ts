@@ -7,6 +7,7 @@ import { catchError } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import { ConfirmDiagComponent } from './confirm-diag/confirm-diag.component';
 import { ChangeDetails } from './change-details/change-details.component';
+import { NewsComponent } from './news/news.component';
 
 @Component({
   selector: 'app-house',
@@ -34,11 +35,11 @@ export class HouseComponent implements OnInit {
     this.loadDefaultCards();
     this.authService.getNewsByStudy(this.study).subscribe(
       (noticias: any[]) => {
-        this.totalNoticias = noticias;
-        noticias = noticias.slice(0, 7); //Iba a hacer para cargar mas noticias
-        for (let i = 0; i < this.noticias.length && i < noticias.length; i++) {
-          this.noticias[i] = noticias[i] || {}; // Agrega la nueva noticia o un objeto vacío si no hay más
-        }
+        this.noticias = noticias;
+        // noticias = noticias.slice(0, 7); //Iba a hacer para cargar mas noticias
+        // for (let i = 0; i < this.noticias.length && i < noticias.length; i++) {
+          // this.noticias[i] = noticias[i] || {}; // Agrega la nueva noticia o un objeto vacío si no hay más
+        // }
       },
       (error) => {
         console.error('Error al obtener noticias', error);
@@ -141,10 +142,34 @@ export class HouseComponent implements OnInit {
       this.currentNewsIndex++;
     } else if (scrollDirection === 'up' && this.currentNewsIndex > 0) {
       this.currentNewsIndex--;
+    } else if (scrollDirection === 'up' && this.currentNewsIndex === 0) {
+      // Si está en la primera noticia y scrollea hacia arriba, ir a la última
+      this.currentNewsIndex = this.noticias.length - 1;
     } else if (scrollDirection === 'down' && this.currentNewsIndex === this.noticias.length - 1) {
-      // Si llega a la última noticia, vuelve a la primera
+      // Si está en la última noticia y scrollea hacia abajo, volver a la primera
       this.currentNewsIndex = 0;
     }
+  }
+  // Agrega el siguiente método en tu componente de Angular
+  scrollNews(direction: 'forward' | 'backward'): void {
+
+    if (direction === 'forward' && this.currentNewsIndex < this.noticias.length - 1) {
+      this.currentNewsIndex++;
+    } else if (direction === 'backward' && this.currentNewsIndex > 0) {
+      this.currentNewsIndex--;
+    } else if (direction === 'forward' && this.currentNewsIndex === this.noticias.length - 1) {
+      this.currentNewsIndex = 0;
+    }
+  }
+
+
+
+  // Añade un método para cambiar el estado de showDescription
+  toggleDescription(): void {
+    const descripcion  = this.noticias[this.currentNewsIndex].description
+    const dialogRef = this.dialog.open(NewsComponent, {
+      data: { message: descripcion }
+    });
   }
 
 }

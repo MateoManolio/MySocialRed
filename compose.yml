@@ -9,6 +9,8 @@ services:
       - ALLOW_EMPTY_PASSWORD=yes
     volumes:
       - mongo-data:/data/db
+    ports:
+      - "27017:27017"
     networks:
       - my_network
 
@@ -31,16 +33,16 @@ services:
       - my_network
 
   proxy:
-    image: nginx:stable-alpine
+    build:
+      context: proxy
+      dockerfile: Dockerfile
     container_name: nginx
-    restart: always
-    environment:
-      - NGINX_ENVSUBST_TEMPLATE_SUFFIX=.conf
-      - NGINX_ENVSUBST_OUTPUT_DIR=/etc/nginx
+    volumes:
+      - ./proxy/nginx.conf:/etc/nginx/templates/nginx.conf.conf
     ports:
       - "80:80"
-    volumes:
-      - ./loadbalancer/nginx.conf:/etc/nginx/templates/nginx.conf.conf
+    depends_on:
+      - frontend
     networks:
       - my_network
 

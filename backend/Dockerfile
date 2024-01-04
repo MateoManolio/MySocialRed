@@ -1,22 +1,20 @@
-# Dockerfile for Node.js/Express.js backend (production)
+# Usa una imagen de Node.js como base
+FROM node:latest
 
-# Use an official Node.js runtime as a parent image
-FROM node:lts-alpine
+# Establece el directorio de trabajo en /app
+WORKDIR /app
 
-# Set the working directory in the container
-WORKDIR /usr/src/app
-
-# Copy package.json and package-lock.json to the working directory
+# Copia el archivo package.json e package-lock.json
 COPY package*.json ./
 
-# Install only production dependencies
-RUN npm install --production
+# Instala las dependencias
+RUN npm install
 
-# Copy the application files to the working directory
+# Copia el resto de la aplicación
 COPY . .
 
-# Expose the port on which the app runs
-EXPOSE 3000
+# Expone el puerto en el que se ejecuta la aplicación
+EXPOSE 8000
 
-# Command to run the application in production mode
-CMD ["npm", "start"]
+# Comando para ejecutar la aplicación
+CMD ["node", "index.js"]
